@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:id="@+id/sliderImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/slider1"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/logo_img"
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="70"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" >
+
+                    <FrameLayout
+                        android:id="@+id/buttonLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5" >
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2" >
+
+                                <TextView
+                                    android:id="@+id/versionTxt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/AppVersion"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/landing_versiontxt_size" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5" >
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/buttonSignUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:orientation="vertical"
+                                android:weightSum="100" >
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="24" >
+                                </FrameLayout>
+
+                                <ImageButton
+                                    android:id="@+id/loginBtn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="28"
+                                    android:background="@drawable/btn_login"
+                                    android:onClick="loginBtn" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="8" >
+                                </FrameLayout>
+
+                                <ImageButton
+                                    android:id="@+id/signupBtn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="28"
+                                    android:background="@drawable/btn_signup"
+                                    android:onClick="signUpBtn"
+                                    android:src="@null" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="12" >
+
+                                    <TextView
+                                        android:id="@+id/textView1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="4dp"
+                                        android:text="@string/copyright" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/loading"
+        android:visibility="visible" />
+
+</RelativeLayout>

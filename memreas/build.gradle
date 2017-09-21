@@ -1,0 +1,151 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'your_keyAlias'
+            keyPassword 'your_keyPassword'
+            storeFile file('/your_path_to/keystore/your_keyAlias.jks')
+            storePassword 'your_keyPassword'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.myapp"
+        minSdkVersion 21
+        //targetSdkVersion 22
+        versionName "13-MAY-2017"
+        versionCode 1201705130
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/MANIFEST.MF'
+        exclude 'META-INF/NOTICE'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    buildTypes {
+        debug {
+            buildConfigField "String", "ENV", "\"DEV\""
+            buildConfigField "String", "SERVER_URL", "\"https://yourdevsite/?action=\""
+            buildConfigField "String", "FE_SMS_URL", "\"https://yourdevsite/index?\""
+            buildConfigField "String", "BUCKET_NAME", "\"YOUR_DEV_S3_BUCKET\""
+            buildConfigField "String", "BUCKET_NAME_CRASH_LOGS", "\"YOUR_DEV_S3_BUCKET-FOR-crashlogs\""
+            buildConfigField "String", "AWS_ACCOUNT_ID", "\"YOUR_AWS_ACCOUNT_ID\""
+            buildConfigField "String", "COGNITO_POOL_ID", "\"YOUR_COGNITO_POOL_ID\""
+            buildConfigField "String", "COGNITO_ROLE_UNAUTH", "\"YOUR_COGNITO_ROLE_UNAUTH\""
+            buildConfigField "String", "COGNITO_ROLE_AUTH", "\"YOUR_COGNITO_ROLE_AUTH\""
+            resValue "string", "AppVersion", "\"version ${defaultConfig.getProperty("versionName")}d\""
+            versionNameSuffix "-debug"
+            minifyEnabled = false
+            proguardFiles += file('proguard-rules.pro')
+            signingConfig signingConfigs.config
+        }
+        beta {
+            buildConfigField "String", "ENV", "\"BETA\""
+            buildConfigField "String", "SERVER_URL", "\"https://yourdevsite/?action=\""
+            buildConfigField "String", "FE_SMS_URL", "\"https://yourdevsite/index?\""
+            buildConfigField "String", "BUCKET_NAME", "\"YOUR_DEV_S3_BUCKET\""
+            buildConfigField "String", "BUCKET_NAME_CRASH_LOGS", "\"YOUR_DEV_S3_BUCKET-FOR-crashlogs\""
+            buildConfigField "String", "AWS_ACCOUNT_ID", "\"YOUR_AWS_ACCOUNT_ID\""
+            buildConfigField "String", "COGNITO_POOL_ID", "\"YOUR_COGNITO_POOL_ID\""
+            buildConfigField "String", "COGNITO_ROLE_UNAUTH", "\"YOUR_COGNITO_ROLE_UNAUTH\""
+            buildConfigField "String", "COGNITO_ROLE_AUTH", "\"YOUR_COGNITO_ROLE_AUTH\""
+            resValue "string", "AppVersion", "\"version ${defaultConfig.getProperty("versionName")}b\""
+            versionNameSuffix "-beta"
+            minifyEnabled = false
+            proguardFiles += file('proguard-rules.pro')
+            signingConfig signingConfigs.config
+        }
+        release {
+            buildConfigField "String", "ENV", "\"PROD\""
+            buildConfigField "String", "SERVER_URL", "\"https://yourprodsite/?action=\""
+            buildConfigField "String", "FE_SMS_URL", "\"https://yourprodsite/index?\""
+            buildConfigField "String", "BUCKET_NAME", "\"YOUR_PROD_S3_BUCKET\""
+            buildConfigField "String", "BUCKET_NAME_CRASH_LOGS", "\"YOUR_PROD_S3_BUCKET-FOR-crashlogs\""
+            buildConfigField "String", "AWS_ACCOUNT_ID", "\"YOUR_AWS_ACCOUNT_ID\""
+            buildConfigField "String", "COGNITO_POOL_ID", "\"YOUR_COGNITO_POOL_ID\""
+            buildConfigField "String", "COGNITO_ROLE_UNAUTH", "\"YOUR_COGNITO_ROLE_UNAUTH\""
+            buildConfigField "String", "COGNITO_ROLE_AUTH", "\"YOUR_COGNITO_ROLE_AUTH\""
+            resValue "string", "AppVersion", "\"version ${defaultConfig.getProperty("versionName")}p\""
+            versionNameSuffix "-release"
+            minifyEnabled = false
+            proguardFiles += file('proguard-rules.pro')
+            signingConfig signingConfigs.config
+        }
+    }
+    /*
+   productFlavors {
+       x86 {
+           applicationId "com.memreas"
+           versionCode Integer.parseInt("6" + defaultConfig.versionCode)
+           ndk {
+               abiFilter "x86"
+           }
+       }
+       mips {
+           applicationId "com.memreas"
+           versionCode Integer.parseInt("4" + defaultConfig.versionCode)
+           ndk {
+               abiFilter "mips"
+           }
+       }
+       armv7 {
+           applicationId "com.memreas"
+           versionCode Integer.parseInt("2" + defaultConfig.versionCode)
+           ndk {
+               abiFilter "armeabi-v7a"
+           }
+       }
+       arm {
+           applicationId "com.memreas"
+           versionCode Integer.parseInt("1" + defaultConfig.versionCode)
+           ndk {
+               abiFilter "armeabi"
+           }
+       }
+   }
+   splits {
+       abi {
+           enable false // enable ABI split feature to create one APK per ABI
+           universalApk false //generate an additional APK that targets all the ABIs
+       }
+   }
+   // map for the version code
+   project.ext.versionCodes = ['armeabi': 1, 'armeabi-v7a': 2, 'arm64-v8a': 3, 'mips': 5, 'mips64': 6, 'x86': 8, 'x86_64': 9]
+   android.applicationVariants.all { variant ->
+       // assign different version code for each output
+       variant.outputs.each { output ->
+           output.versionCodeOverride =
+                   project.ext.versionCodes.get(output.getFilter(com.android.build.OutputFile.ABI), 0) * 1000000 + android.defaultConfig.versionCode
+       }
+   }
+   */
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //compile 'org.apache.httpcomponents:httpcore:4.4.3'
+    //compile 'org.apache.httpcomponents:httpclient:4.5.1'
+    //compile 'org.apache.httpcomponents:httpmime:4.5.1'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile 'com.google.android.gms:play-services-location:8.3.0'
+    compile 'com.google.android.gms:play-services-maps:8.3.0'
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile 'com.google.guava:guava:18.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.amazonaws:aws-android-sdk-core:2.2.+'
+    compile 'com.amazonaws:aws-android-sdk-s3:2.2.+'
+    //compile 'com.amazonaws:aws-android-sdk-apigateway-core:2.2.+'
+
+}
+
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_context_menu_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_corner"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:weightSum="100" 
+    android:visibility="gone">
+
+    <!-- android:background="@android:color/transparent" -->
+
+    <ImageView
+        android:id="@+id/event_media_play"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:padding="2dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_play_audio" />
+
+    <SeekBar
+        android:id="@+id/event_seek_bar"
+        android:layout_width="0dp"
+        android:layout_height="13dp"
+        android:layout_gravity="center"
+        android:layout_weight="60"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/audio_comment_progressbar"
+        android:thumb="@drawable/audio_seek_thumb"
+        android:thumbOffset="0dp" />
+
+    <TextView
+        android:id="@+id/event_media_duration"
+        android:layout_width="0dp"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center_horizontal"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="00:00"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/event_media_expand"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_weight="5"
+        android:padding="1dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/maximize" />
+
+</LinearLayout>

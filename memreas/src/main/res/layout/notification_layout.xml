@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+             <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <Button
+            android:id="@+id/buttonMedia"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@drawable/dropdown_black"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+            android:textColor="@android:color/white"
+            android:onClick="more"
+            android:textSize="@dimen/memreas_btn_text_size" 
+            android:text="media" />
+        
+        
+         <RadioGroup android:id="@+id/rgMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+             
+
+	        <RadioButton
+		        android:id="@+id/rbMedia_Off"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		          android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="off" />
+	        
+	         <RadioButton
+		        android:id="@+id/rbMedia_people"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="people I follow" />
+               
+               <RadioButton
+		        android:id="@+id/rbMedia_default"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="everyone (default)" />
+	        
+	      
+	        
+	          </RadioGroup>
+        
+        
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        
+        <Button
+            android:id="@+id/buttonLikeNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@drawable/dropdown_black"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+            android:textColor="@android:color/white"
+            android:onClick="more"
+            android:textSize="@dimen/memreas_btn_text_size" 
+            android:text="like notifications" />
+        <RadioGroup android:id="@+id/rgLikeNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+             
+
+	        <RadioButton
+		        android:id="@+id/rbLikeNotifications_Off"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="off" />
+	        
+	         <RadioButton
+		        android:id="@+id/rbLikeNotifications_people"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="people I follow" />
+               
+               <RadioButton
+		        android:id="@+id/rbLikeNotifications_default"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="everyone (default)" />
+	        
+	      
+	        
+	          </RadioGroup>
+        
+    </LinearLayout>
+            
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        
+        <Button
+            android:id="@+id/buttonComment"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@drawable/dropdown_black"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+            android:textColor="@android:color/white"
+            android:onClick="more"
+            android:textSize="@dimen/memreas_btn_text_size" 
+            android:text="comment notifications" />
+        
+        
+         <RadioGroup android:id="@+id/rgComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+             
+
+	        <RadioButton
+		        android:id="@+id/rbComment_Off"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="off" />
+	        
+	         <RadioButton
+		        android:id="@+id/rbComment_people"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="people I follow" />
+               
+               <RadioButton
+		        android:id="@+id/rbComment_default"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="everyone (default)" />
+	        
+	      
+	        
+	          </RadioGroup>
+        
+        
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        
+        <Button
+            android:id="@+id/buttonEvent"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@drawable/dropdown_black"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+            android:textColor="@android:color/white"
+            android:onClick="more"
+            android:textSize="@dimen/memreas_btn_text_size" 
+            android:text="event requests" />
+        
+        
+        <RadioGroup android:id="@+id/rgEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+             
+
+	        <RadioButton
+		        android:id="@+id/rbEvent_Off"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="off" />
+	        
+	         <RadioButton
+		        android:id="@+id/rbEvent_people"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="people I follow" />
+               
+               <RadioButton
+		        android:id="@+id/rbEvent_default"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="everyone (default)" />
+	        
+	      
+	        
+	          </RadioGroup>
+        
+        
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        
+        <Button
+            android:id="@+id/buttonFriend"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@drawable/dropdown_black"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+            android:textColor="@android:color/white"
+            android:onClick="more"
+            android:textSize="@dimen/memreas_btn_text_size" 
+            android:text="friend request" />
+        
+        
+       <RadioGroup android:id="@+id/rgFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+             
+
+	        <RadioButton
+		        android:id="@+id/rbFriend_Off"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="off" />
+	        
+	         <RadioButton
+		        android:id="@+id/rbFriend_people"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="people I follow" />
+               
+               <RadioButton
+		        android:id="@+id/rbFriend_default"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		           android:button="@drawable/radiobutton_bg"
+		      android:paddingLeft="5dp"
+		        android:text="everyone (default)" />
+	        
+	      
+	        
+	          </RadioGroup>
+        
+        
+    </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

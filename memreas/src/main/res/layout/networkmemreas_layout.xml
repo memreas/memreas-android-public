@@ -1,0 +1,728 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="85"
+                android:background="@drawable/hdr_bg"
+                android:weightSum="100" >
+
+                <!-- <FrameLayout -->
+                <!-- android:layout_width="0dp" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_weight="37" > -->
+                <!-- </FrameLayout> -->
+
+                <ImageButton
+                    android:id="@+id/backBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/signup_backbtn_margin"
+                    android:layout_weight="20"
+                    android:background="@drawable/btn_back"
+                    android:onClick="more" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15" >
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/titleView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="37"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:src="@drawable/network" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15" >
+                </FrameLayout>
+
+                <ImageButton
+                    android:id="@+id/optionBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/memreas_optionbtn_margin"
+                    android:layout_weight="13"
+                    android:background="@drawable/option_icon"
+                    android:onClick="optionBtn"
+                    android:src="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="71"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="89"
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <ScrollView
+                    android:id="@+id/layoutMembersDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="55.5"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="100" >
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="98"
+                                android:orientation="vertical" >
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height" >
+                                </FrameLayout>
+
+                                <TextView
+                                    android:id="@+id/NotificationView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_notifyview_height"
+                                    android:background="@drawable/dark_bg"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:singleLine="true"
+                                    android:text="@string/memreas_only_name_required"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/add_memreas_text_size" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_half_height" >
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_namelyt_height"
+                                    android:weightSum="100" >
+
+                                    <TextView
+                                        android:id="@+id/txtName"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="32"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:text="@string/memreas_create_name"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="@dimen/add_memreas_text_size" />
+
+                                    <EditText
+                                        android:id="@+id/editTextName"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="68"
+                                        android:background="@drawable/edittext_share_name"
+                                        android:ems="4"
+                                        android:hint="@string/memreas_create_name_hint"
+                                        android:imeOptions="actionNext"
+                                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                                        android:singleLine="true"
+                                        android:textSize="@dimen/signup_edit_text_size" />
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height" >
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_datelyt_height"
+                                    android:weightSum="100" >
+
+                                    <TextView
+                                        android:id="@+id/txtDate"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="32"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:text="@string/memreas_create_date"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="@dimen/add_memreas_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/editTextDate"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="58"
+                                        android:background="@drawable/edittext_bg_addmem"
+                                        android:clickable="true"
+                                        android:gravity="center_vertical"
+                                        android:onClick="onClickCal"
+                                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                                        android:singleLine="true"
+                                        android:textColor="?android:attr/editTextColor"
+                                        android:textSize="@dimen/signup_edit_text_size" />
+
+                                    <ImageButton
+                                        android:id="@+id/imgBtnDate"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="10"
+                                        android:background="@drawable/btn_date"
+                                        android:onClick="onClickCal" />
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height" >
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_locatinlyt_height"
+                                    android:weightSum="100" >
+
+                                    <TextView
+                                        android:id="@+id/txtLocation"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="32"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:text="@string/memreas_create_location"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="@dimen/add_memreas_text_size" />
+
+                                    <EditText
+                                        android:id="@+id/editTextLocation"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="68"
+                                        android:background="@drawable/edittext_share_name"
+                                        android:ems="4"
+                                        android:hint="@string/memreas_create_location_hint"
+                                        android:imeOptions="actionDone"
+                                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                                        android:singleLine="true"
+                                        android:textSize="@dimen/signup_edit_text_size" >
+
+                                        <requestFocus />
+                                    </EditText>
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height" >
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_checkpiclyt_height"
+                                    android:weightSum="100" >
+
+                                    <ImageButton
+                                        android:id="@+id/cbPicVideo"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/unselected"
+                                        android:onClick="onClick" />
+
+                                    <TextView
+                                        android:id="@+id/textCheckPic"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="93"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="@dimen/add_memreas_check_text_margin_left"
+                                        android:singleLine="true"
+                                        android:text="@string/memreas_create_friends_can_post"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="@dimen/add_memreas_text_size" />
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height1" >
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_checkfriendlyt_height"
+                                    android:weightSum="100" >
+
+                                    <ImageButton
+                                        android:id="@+id/cbFrndAdd"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/unselected"
+                                        android:onClick="onClick" />
+
+                                    <TextView
+                                        android:id="@+id/textCheckAddFriend"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="93"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="@dimen/add_memreas_check_text_margin_left"
+                                        android:singleLine="true"
+                                        android:text="@string/memreas_create_friends_can_add_friends"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="@dimen/add_memreas_text_size" />
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height1" >
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_checkpubliclyt_height"
+                                    android:weightSum="100" >
+
+                                    <ImageButton
+                                        android:id="@+id/cbPublic"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/selected"
+                                        android:onClick="onClick" />
+
+                                    <TextView
+                                        android:id="@+id/textCheckPublic"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="93"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="@dimen/add_memreas_check_text_margin_left"
+                                        android:singleLine="true"
+                                        android:text="@string/memreas_create_public"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="@dimen/add_memreas_text_size" />
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height" >
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_viewablelyt_height"
+                                    android:weightSum="100" >
+
+                                    <TextView
+                                        android:id="@+id/txtViewable"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="22"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:text="@string/memreas_create_viewable"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="@dimen/add_memreas_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/editTextFrom"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="27"
+                                        android:background="@drawable/edittext_date_1"
+                                        android:clickable="true"
+                                        android:editable="false"
+                                        android:gravity="center_vertical"
+                                        android:hint="@string/memreas_create_date_from_hint"
+                                        android:onClick="onClickCal"
+                                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                                        android:singleLine="true"
+                                        android:textColor="?android:attr/editTextColor"
+                                        android:textSize="@dimen/signup_edit_text_size" />
+
+                                    <ImageButton
+                                        android:id="@+id/imgBtnDtFrom"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="10"
+                                        android:background="@drawable/btn_date"
+                                        android:onClick="onClickCal" />
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="4" >
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:id="@+id/editTextTo"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="27"
+                                        android:background="@drawable/edittext_date_1"
+                                        android:clickable="true"
+                                        android:editable="false"
+                                        android:gravity="center_vertical"
+                                        android:hint="@string/memreas_create_date_to_hint"
+                                        android:onClick="onClickCal"
+                                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                                        android:singleLine="true"
+                                        android:textColor="?android:attr/editTextColor"
+                                        android:textSize="@dimen/signup_edit_text_size" />
+
+                                    <ImageButton
+                                        android:id="@+id/imgBtnDtTo"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="10"
+                                        android:background="@drawable/btn_date"
+                                        android:onClick="onClickCal" />
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height" >
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_destructlyt_height"
+                                    android:weightSum="100" >
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="7"
+                                        android:orientation="vertical"
+                                        android:weightSum="100" >
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="20.83" >
+                                        </FrameLayout>
+
+                                        <ImageButton
+                                            android:id="@+id/cbSelfDestruct"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="58.34"
+                                            android:background="@drawable/unselected"
+                                            android:onClick="onClick" />
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="20.83" >
+                                        </FrameLayout>
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/textDestruct"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="30"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="@dimen/add_memreas_check_text_margin_left"
+                                        android:text="@string/memreas_create_ghost"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="@dimen/add_memreas_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/editTextSelfDestruct"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="34"
+                                        android:background="@drawable/edittext_date_1"
+                                        android:clickable="true"
+                                        android:gravity="center_vertical"
+                                        android:onClick="onClickCal"
+                                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                                        android:textColor="?android:attr/editTextColor"
+                                        android:textSize="@dimen/signup_edit_text_size" />
+
+                                    <ImageButton
+                                        android:id="@+id/imgBtnselfdestCal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="10"
+                                        android:background="@drawable/btn_date"
+                                        android:onClick="onClickCal" />
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height" >
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3" >
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btnWifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7.5"
+                    android:background="@drawable/dropdown_black"
+                    android:gravity="center_vertical|left"
+                    android:onClick="more"
+                    android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                    android:text="@string/memreas_network_wifi"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutWifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <ScrollView
+                        android:id="@+id/scrollView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <CheckBox
+                                    android:id="@+id/cbWifi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/checkbox_bg"
+                                    android:button="@null" />
+
+                                <TextView
+                                    android:id="@+id/textView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                                    android:text="Queue uploads and downloads only when on Wifi (default)"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/memreas_btn_text_size" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3" >
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btnOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7.5"
+                    android:background="@drawable/dropdown_black"
+                    android:gravity="center_vertical|left"
+                    android:onClick="more"
+                    android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                    android:text="@string/memreas_network_upload"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="55.5"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:weightSum="100" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cbDownload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/checkbox_bg"
+                            android:button="@null" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                                android:text="Download Full Resolution Photos"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/memreas_btn_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                                android:text="Note: not recommended for devices with low disk space"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cbAutoUpload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/checkbox_bg"
+                            android:button="@null" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                                android:text="Download Full Resolution Photos"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/memreas_btn_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                                android:text="Note: not recommended for devices with low disk space"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5" >
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                layout="@layout/admob" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.3" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/main_menu_bar" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

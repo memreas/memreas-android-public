@@ -1,0 +1,276 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/memreas_event_details_LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <!-- profile and name section start -->
+    <!-- <include layout="@layout/memreas_event_gallery_header_item" /> -->
+
+
+    <!-- profile and name section start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="100" >
+
+		<include 
+		    android:id="@+id/detailsProfile"
+		    layout="@layout/memreas_event_details_profile"
+		    android:layout_height="wrap_content" 
+		    android:layout_width="0dp" 
+		    android:layout_weight="25"
+		    android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="75"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/txtDetailsEventName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|fill_horizontal"
+                    android:background="@drawable/edittext_bg_friend"
+                    android:gravity="center"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="\@username"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/signup_text_size"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- profile and name section end -->
+
+
+    <!-- media inappropriate cover start -->
+
+    <LinearLayout
+        android:id="@+id/mediaInappropriateCoverLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/edittext_bg_friend"
+            android:gravity="center|center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/memreas_event_details_inappropriate_hidden"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/signup_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!-- media inappropriate cover end -->
+
+
+    <!-- event media section start -->
+
+    <LinearLayout
+        android:id="@+id/mediaLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <include layout="@layout/memreas_event_details_image_pager_item" />
+    </LinearLayout>
+    <!-- event media section end -->
+
+
+    <!-- event media play bar start -->
+    <!-- <include layout="@layout/video_context_menu"/> -->
+    <!-- event media play bar end -->
+
+
+    <!-- event media menu bar start -->
+
+    <LinearLayout
+        android:id="@+id/mediaMenuLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/menu_event_background"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <ImageButton
+            android:id="@+id/imgBtnDownload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/download_icon" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" >
+
+            <ImageButton
+                android:id="@+id/imgBtnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_like" />
+
+            <TextView
+                android:id="@+id/mediaLikeTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" >
+
+            <ImageButton
+                android:id="@+id/imgBtnCommentView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_comment" />
+
+            <TextView
+                android:id="@+id/txtCommentText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" >
+
+            <ImageButton
+                android:id="@+id/imgBtnSound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_audio" />
+
+            <TextView
+                android:id="@+id/txtCommentSound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/imgBtnMaximize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/maximize" />
+
+        <ImageButton
+            android:id="@+id/imgBtnReport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_report" />
+    </LinearLayout>
+    <!-- event media menu bar end -->
+
+
+    <!-- event comment section start -->
+
+    <LinearLayout
+        android:id="@+id/memreas_event_comment_viewpager_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/memreas_event_comment_details_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="@integer/comment_cols" />
+
+        <!-- <include layout="@layout/memreas_event_gallery_comment_item" /> -->
+    </LinearLayout>
+    <!-- event comment section end -->
+
+</LinearLayout>

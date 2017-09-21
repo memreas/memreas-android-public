@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <!-- Include Gallery View Layout here... -->
+
+            <include layout="@layout/screen_header_ref" />
+        </LinearLayout>
+
+        <!-- center section start -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="65"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="9"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/eventGalleryBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_black"
+                    android:text="@string/memreas_event_gallery"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+
+                <Button
+                    android:id="@+id/eventDetailsBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gray"
+                    android:text="@string/memreas_event_details"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+
+                <Button
+                    android:id="@+id/eventLocationBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gray"
+                    android:text="@string/memreas_event_location"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- include for center section profile to comment... -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="93"
+                android:orientation="horizontal" >
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/memreas_event_gallery"
+                    android:visibility="visible" />
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/memreas_event_details"
+                    android:visibility="gone" />
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/memreas_event_details_location"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- center section end -->
+
+
+        <!-- add media and friends buttons start -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:padding="3dp" >
+
+                <Button
+                    android:id="@+id/btnAddComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_add"
+                    android:gravity="center"
+                    android:onClick="addMemreasBtn"
+                    android:text="@string/memreas_custom_add_comment"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:padding="3dp" >
+
+                <Button
+                    android:id="@+id/btnAddMedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_add"
+                    android:gravity="center"
+                    android:text="@string/memreas_custom_add_media"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:padding="3dp" >
+
+                <Button
+                    android:id="@+id/btnAddFriends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_add"
+                    android:gravity="center"
+                    android:text="@string/memreas_custom_add_friends"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- add media and friends buttons end -->
+        <!-- add media and friends buttons end -->
+        <!-- ads and footer start -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                layout="@layout/admob" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/main_menu_bar" />
+        </FrameLayout>
+        <!-- ads and footer end -->
+
+    </LinearLayout>
+
+    <include
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

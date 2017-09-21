@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMediaDetails"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="55.5"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:weightSum="100" >
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/media_create_horizontal_space"
+        android:numColumns="3"
+        android:smoothScrollbar="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/media_create_vertical_space" >
+    </GridView>
+
+    <!--
+        18-JAN-2016
+        Remove comment and audio to reduce complexity for now
+    <TextView
+        android:id="@+id/textComment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/add_memreas_comment_margin_left"
+        android:singleLine="true"
+        android:text="@string/memreas_create_comment_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/add_memreas_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="@drawable/comment_item_bg"
+        android:weightSum="100" >
+
+        <EditText
+            android:id="@+id/addComment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="88.29"
+            android:background="#00ffffff"
+            android:ems="10"
+            android:hint="@string/memreas_create_commet_hint"
+            android:imeOptions="actionDone"
+            android:paddingLeft="@dimen/signup_edit_margin_left"
+            android:singleLine="true"
+            android:textSize="@dimen/signup_edit_text_size" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/addCommentAudio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="11.71"
+            android:onClick="addCommentAudioBtn"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_micro" />
+    </LinearLayout>
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" >
+    </FrameLayout>
+
+</LinearLayout>

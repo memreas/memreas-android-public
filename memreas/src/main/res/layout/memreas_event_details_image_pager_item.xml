@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/memreas_event_details_pager_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp" >
+
+    <TextView
+        android:id="@+id/memreas_event_details_inappropriate_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_horizontal"
+        android:background="@drawable/edittext_bg_friend"
+        android:gravity="center|center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/memreas_event_details_inappropriate_hidden"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/signup_text_size"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/memreas_event_details_pager_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:cropToPadding="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/gallery_img" />
+
+    <ImageView
+        android:id="@+id/memreas_event_details_pager_play_video_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/play_video"
+        android:visibility="invisible" />
+
+    <VideoView
+        android:id="@+id/memreas_event_details_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/memreasEventDetailsPagerProgressBar"
+        style="@android:style/Widget.ProgressBar.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minHeight="36dp"
+        android:minWidth="36dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/memreas_event_details_pager_cancel_video_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/cancel"
+        android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/memreas_event_details_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </android.support.v4.view.ViewPager>
+
+</FrameLayout>

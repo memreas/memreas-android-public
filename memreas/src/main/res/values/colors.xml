@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_dialog_divider">#a1a1a1</color>
+    <color name="event_background">#08088A</color>
+</resources>

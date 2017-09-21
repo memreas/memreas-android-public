@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="AdMob_ID">pub-2182144607113281</string> -->
+    <string name="banner_ad_unit_id">ca-app-pub-2182144607113281/1716865858</string>
+    <string name="app_name">memreas</string>
+    <string name="copyright">© memreas llc</string>
+    <string name="register_email">email</string>
+    <string name="register_email_hint">user@mail.com</string>
+    <string name="missing_device_id">missing device id</string>
+    <string name="register_username">username</string>
+    <string name="register_usename_hint">user name</string>
+    <string name="register_password">password</string>
+    <string name="register_password_hint">********</string>
+    <string name="register_verify_password">verify password</string>
+    <string name="register_verify_password_hint">********</string>
+    <string name="register_secret">secret</string>
+    <string name="register_invite">invite by (optional)</string>
+    <string name="register_invite_hint">person</string>
+    <string name="register_check_text">terms of service</string>
+    <string name="register_valid_email">valid email address.</string>
+    <string name="register_invalid_email">invalid email address.</string>
+    <string name="register_invalid_username">username is not valid.</string>
+    <string name="register_accept_disclaimer">please accept terms of service.</string>
+    <string name="register_field_missing">you missed an entry</string>
+    <string name="register_username_short">username is too short.</string>
+    <string name="register_username_long">username is too long.</string>
+    <string name="register_password_short">password is too short.</string>
+    <string name="register_password_long">password is too long.</string>
+    <string name="register_verify_password_short">verify password is too short.</string>
+    <string name="register_verify_password_long">verify password is too long.</string>
+    <string name="register_pass_not_matched">password does not match</string>
+    <string name="register_username_not_taken">username is not taken.</string>
+    <string name="register_username_taken">username is taken.</string>
+    <string name="register_valid_secret">secret is missing.</string>
+    <string name="profile_pic_upload">profile picture uploading : </string>
+    <string name="forgot_password">new password</string>
+    <string name="forgot_activate">activation code</string>
+    <string name="forgot_activationcode">activation code is empty.</string>
+    <string name="memreas_me">me</string>
+    <string name="memreas_friend">friend</string>
+    <string name="memreas_public">public</string>
+    <string name="memreas_event_gallery">gallery</string>
+    <string name="memreas_event_media">media</string>
+    <string name="memreas_event_details">details</string>
+    <string name="memreas_event_gallery_inappropriate_hidden">content hidden</string>
+    <string name="memreas_event_details_inappropriate_hidden">content hidden</string>
+    <string name="memreas_event_details_inappropriate_hide">hide content</string>
+    <string name="memreas_event_details_inappropriate_hide_content">hide this content</string>
+    <string name="memreas_event_details_inappropriate_hide_sexual">offensive sexual content</string>
+    <string name="memreas_event_details_inappropriate_hide_violent">offensive violent content</string>
+    <string name="memreas_event_details_inappropriate_hide_hate">offensive hate speech content</string>
+    <string name="memreas_event_details_inappropriate_hide_other">other</string>
+    <string name="memreas_event_details_inappropriate_copyright">copyright infringement</string>
+    <string name="memreas_event_details_no_comments">no comments...</string>
+    <string name="memreas_event_location">location</string>
+    <string name="memreas_add_memreas">add memreas</string>
+    <string name="memreas_network_wifi">wifi settings</string>
+    <string name="memreas_network_upload">upload / downlaod options</string>
+    <string name="memreas_more_account_payment_method">payment method</string>
+    <string name="memreas_more_account_payment_method1">plan d: 100gb monthly - 9.94 usd</string>
+    <string name="memreas_more_account_payment_method2">plan c: 50gb monthly - 4.95 usd</string>
+    <string name="memreas_more_account_payment_method3">plan b: 20gb monthly - 2.5 usd</string>
+    <string name="memreas_more_account_payment_method4">plan a: 2gb monthly - 0 usd</string>
+    <string name="memreas_more_friends">friends</string>
+    <string name="memreas_more_group">group</string>
+    <string name="memreas_more_notification">notifications</string>
+    <string name="memreas_more_network">network</string>
+    <string name="memreas_more_help">help</string>
+    <string name="memreas_more_manager_memreas">manager memreas</string>
+    <string name="memreas_help_usage">usage basics</string>
+    <string name="memreas_help_about">about</string>
+    <string name="memreas_help_faqs">faqs</string>
+    <string name="memreas_help_memberguidelines">member guidelines</string>
+    <string name="memreas_help_feedback">feedback</string>
+    <string name="memreas_more_account">account</string>
+    <string name="memreas_more_member_guidelines">member guidelines</string>
+    <string name="memreas_more_privacy_policy">privacy policy</string>
+    <string name="memreas_more_dmca_policy">dmca policy</string>
+    <string name="memreas_more_terms_of_service">terms of service</string>
+    <string name="memreas_more_version">version</string>
+    <string name="memreas_more_member_guidelines_text">member guidelines</string>
+    <string name="memreas_more_privacy_policy_text">privacy policy</string>
+    <string name="memreas_more_dmca_policy_text">dmca policy</string>
+    <string name="memreas_more_terms_of_service_text">terms of service</string>
+    <string name="memreas_about_privacy">privacy policy</string>
+    <string name="memreas_about_tos">terms of service</string>
+    <string name="memreas_about_dmca_policy">DMCA policy</string>
+    <string name="memreas_about_version">version:</string>
+    <string name="memreas_about_about_text">Lorem ipsum dolor sit amet, consectetur adipscing elit. 
+        Morbi ultrices pretium eleifend. Vestibulum  semper sollicitudin dui, quis consequat elit 
+        pellentesque non. Nam aliquet consectetur sem, in accumsan nisl eleifend non. Integer at
+        nisl et lacus pellentesque dictum.  Phasellus ullamcorper mattis quam, id facilisis orci ornare eu.</string>
+    <string name="memreas_create_detail">memreas details</string>
+    <string name="memreas_create_media">media</string>
+    <string name="memreas_create_friends">friends</string>
+    <string name="memreas_create_add">add</string>
+    <string name="memreas_create_next">next</string>
+    <string name="memreas_create_finish">finish</string>
+    <string name="memreas_create_done">done</string>
+    <string name="memreas_galery_ok">ok</string>
+    <string name="memreas_create_cancel">cancel</string>
+    <string name="memreas_only_name_required">only name is required</string>
+    <string name="memreas_create_name">name :</string>
+    <string name="memreas_create_date">date :</string>
+    <string name="memreas_create_location">location :</string>
+    <string name="memreas_create_friends_can_post">friends can post pics/videos</string>
+    <string name="memreas_create_friends_can_add_friends">friends can add friends</string>
+    <string name="memreas_create_public">public</string>
+    <string name="memreas_create_viewable">viewable :</string>
+    <string name="memreas_create_ghost">ghost</string>
+    <string name="memreas_create_name_hint">sample</string>
+    <string name="memreas_create_location_hint">address or location</string>
+    <string name="memreas_create_date_to_hint">to</string>
+    <string name="memreas_create_date_from_hint">from</string>
+    <string name="memreas_create_comment_text">add a comment</string>
+    <string name="memreas_create_commet_hint">your comments here</string>
+    <string name="memreas_create_group_text">make this a group</string>
+    <string name="memreas_create_group_hint">make this group, group name here</string>
+    <string name="memreas_create_email_hint">enter email id here</string>
+    <string name="memreas_create_sms_hint">select contact to send sms</string>
+    <string name="memreas_create_spinner">friend list</string>
+    <string name="memreas_create_alert">please enter a name</string>
+    <string name="memreas_create_friend_alert">you have not selected a friend for the event, do you want to continue? </string>
+    <string name="memreas_create_media_alert">you have not selected media for the event, do you want to continue? </string>
+    <string name="memreas_create_destruct_alert">please enter ghost dat.</string>
+    <string name="memreas_create_start_end_alert">start date must be before end date</string>
+    <string name="memreas_create_date_alert">please select a future date</string>
+    <string name="memreas_create_group_alert">please enter group name.</string>
+    <string name="memreas_custom_btn_gallery">gallery</string>
+    <string name="memreas_custom_btn_detail">details</string>
+    <string name="memreas_custom_btn_edit">edit</string>
+    <string name="memreas_custom_btn_location">location</string>
+    <string name="memreas_custom_btn_enter_location">enter location</string>
+    <string name="memreas_custom_add_media">add media</string>
+    <string name="memreas_custom_add_comment">comment</string>
+    <string name="memreas_custom_add_friends">add friends</string>
+    <string name="memreas_custom_comment_hint">comments, audio, and likes</string>
+    <string name="memreas_custom_media_not_available">media not available</string>
+    <string name="memreas_custom_media_comment">add a comment</string>
+    <string name="memreas_custom_media_comment_hint">your comments here</string>
+    <string name="option_memreas_search_hint">\@person, #hashtag,!memreas</string>
+    <string name="option_memreas_search_user_friend_added">friend added</string>
+    <string name="option_memreas_search_user_friend_request">friend request sent</string>
+    <string name="option_memreas_search_event_added">added</string>
+    <string name="option_memreas_search_hashtag_comment">comment details</string>
+    <string name="option_memreas_notification">notifications</string>
+    <string name="option_memreas_logout">logout</string>
+    <string name="option_memreas_clear">clear</string>
+    <string name="option_memreas_submit">submit</string>
+    <string name="gallery_btn_view">view</string>
+    <string name="gallery_btn_shoot">shoot</string>
+    <string name="gallery_btn_sync">sync</string>
+    <string name="gallery_btn_location">location</string>
+    <string name="gallery_btn_clear">clear</string>
+    <string name="gallery_btn_done">done</string>
+    <string name="color_green">green - stored on your device and your memreas account</string>
+    <string name="color_yellow">yellow - available from your memreas accunt</string>
+    <string name="color_red">red - available for upload to your memreas account </string>
+    <string name="gallery_search_location_hint">search your location</string>
+    <string name="gallery_location_btn_ok">ok</string>
+    <string name="gallery_location_btn_cancel">cancel</string>
+    <string name="upload_btn_uploaddownload">uploads/downloads</string>
+    <string name="upload_btn_completed">completed</string>
+    <string name="upload_btn_pause">pause</string>
+    <string name="upload_btn_resume">resume</string>
+    <string name="upload_btn_clear">clear</string>
+
+    <!-- *********************************************************** -->
+
+    <string name="none"></string>
+    <string name="menu_settings">settings</string>
+    <string name="Back_Desc">back event</string>
+    <string name="reg_pass_invalid">password should be between 6 and 32 characters.</string>
+    <string name="reg_done">registration successfully completed</string>
+    <string name="reg_field_invalid_mail">email address is not valid</string>
+    <string name="reg_field_invalid_password">password is not valid</string>
+    <string name="media_downloaded">media already downloded</string>
+    <string name="media_download_queue_alert">media is already in download queue</string>
+    <string name="media_download_queue">media is added in downloading queue</string>
+
+    <!--
+    <string name="upload_max_limite_alert">You can not select more then 10 medias at a time for uploading.</string>
+	<string name="download_max_limite_alert">You can not select more then 10 medias at a time for downloading.</string>
+
+
+
+
+    -->
+
+    <string name="upload_max_limite_alert">you can not select more then 10 media at a time for upload and download</string>
+    <string name="download_max_limite_alert">you can not select more then 10 media at a time for upload and download</string>
+    <string name="green_media_select_alert"> selected media is already on local and server drive</string>
+    <string name="gallery_alert">you have not selected media for upload or download, do you want to continue?</string>
+    <string name="appropriate_alert">appropriate flag successfully updated</string>
+    <string name="NO_More_Images">no more images for this event</string>
+    <string name="VideoView_error_title">cannot play video</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">this video is not valid for streaming to this device</string>
+    <string name="VideoView_error_text_unknown">this video cannot be played.</string>
+    <string name="VideoView_error_button">ok</string>
+    <string name="mediacontroller_play_pause">play/pause</string>
+    <string name="BACK">back</string>
+
+    <!-- registeration string -->
+    <string name="verifypwd_hint">********</string>
+    <string name="color_pick">pick a color</string>
+    <string name="manager_friends_save">save</string>
+    <string name="manager_friends_cancel">cancel</string>
+    <string name="manager_friends_keep">keep</string>
+    <string name="manager_friends_remove">remove</string>
+    <string name="notification_second">Few seconds ago</string>
+    <string name="notification_minute1">1 minute ago</string>
+    <string name="notification_minutes">%1$s minute ago</string>
+    <string name="notification_hour1">1 hour ago</string>
+    <string name="notification_hours">%1$s hours ago</string>
+    <string name="notification_day1">1 days ago</string>
+    <string name="notification_days">%1$s days ago</string>
+    <string name="notification_week1">1 week ago</string>
+    <string name="notification_weeks">%1$s weeks ago</string>
+    <string name="notification_month1">1 month ago</string>
+    <string name="notification_months">%1$s months ago</string>
+    <string name="notification_year1">1 year ago</string>
+    <string name="notification_years">%1$s years ago</string>
+    <string name="account_account">account</string>
+    <string name="account_alternal_email_hint">alternal email</string>
+    <string name="account_date_of_birth">date of birth</string>
+    <string name="account_change_password">change password</string>
+    <string name="account_old_password">old password</string>
+    <string name="account_new_password">new password</string>
+    <string name="account_gender">gender</string>
+    <string name="account_gender_male">male</string>
+    <string name="account_gender_female">female</string>
+    <string name="alert_limit_video_duration">videos are limited to 10 minute max - purchase a plan and receive 5GB upload limits</string>
+    <string name="alert_video_duration_least">video should be 3 minutes in length at least</string>
+    <string name="alert_limit_video_size">videos are limited to 100MB max - purchase a plan and receive 5GB upload limits</string>
+    <string name="alert_limit_video_size_paid">videos are limited to 500GB max</string>
+    <string name="alert_media_synchonized">you have sync\'d this media</string>
+    <string name="alert_friend_added">this friend is added</string>
+    <string name="alert_network_error">network error</string>
+    <string name="alert_change_password_successful">password changed</string>
+    <string name="alert_old_password">password required</string>
+    <string name="alert_new_password_short">new password too short</string>
+    <string name="alert_new_password_verify">new password does not match</string>
+    <string name="alert_save_user_details_successful">profile is updated</string>
+    <string name="alert_verify_email">please check your email and verify to login</string>
+    <string name="enter_location">enter location</string>
+    <string name="alert_simcard_not_available">please insert sim card</string>
+    <string name="add_friend_email">email :</string>
+    <string name="add_friend_sms">sms :</string>
+    <string name="add_a_comment">add a comment</string>
+    <string name="add_memreas_email_address_list">email address list</string>
+    <string name="add_memreas_sms_numbers">sms numbers</string>
+    <string name="add_memreas_sms_content">%1$s invites you to !%2$s %3$s</string>
+    <string name="confirm_yes">yes</string>
+    <string name="confirm_no">no</string>
+
+    <string-array name="country_array">
+        <item>Greece</item>
+        <item>United Kingdom</item>
+        <item>Italy</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Turkey</item>
+        <item>Poland</item>
+        <item>India</item>
+    </string-array>
+    <string-array name="frd_array">
+        <item>memreas</item>
+        <item>Facebook</item>
+        <item>Twitter</item>
+    </string-array>
+
+    <string name="add_friend_contact_hint">Search Contact</string>
+    <string name="no_result">No result found!</string>
+    <string name="search_input_error">please enter valid search text. For searching person use @, for event use !, for discover use #.</string>
+    <string name="notification_dropdown">Notifications</string>
+    <string name="notification_friend_request">friend request sent</string>
+    <string name="notification_friend_response">friend request response</string>
+    <string name="notification_memreas_event_request">memreas invite sent</string>
+    <string name="notification_memreas_event_response">memreas invite response</string>
+    <string name="notification_memreas_event_media_added">memreas invite response</string>
+
+    <string name="notification_reply_text_hint">Write a comment&#8230;</string>
+    <string name="notification_reply_text">reply comment (optional accept/decline)</string>
+    <string name="notification_accept">accept</string>
+    <string name="notification_decline">decline</string>
+    <string name="notification_ignore">ignore</string>
+
+    <string name="notification_reply_cancel">Cancel</string>
+    <string name="notification_reply_ok">OK</string>
+
+    <string name="camera_image">image</string>
+    <string name="camera_video">video</string>
+    <string name="camera_timer">00:00:00</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

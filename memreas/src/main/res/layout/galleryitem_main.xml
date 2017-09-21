@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true" >
+
+    <ImageView
+        android:id="@+id/thumbback"
+        android:layout_width="@dimen/media_gallery_back_width"
+        android:layout_height="@dimen/media_gallery_back_height"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:clickable="false"
+        android:duplicateParentState="true"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/thumbImage"
+        android:layout_width="@dimen/media_gallery_thumb_width"
+        android:layout_height="@dimen/media_gallery_thumb_height"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        android:clickable="false"
+        android:cropToPadding="false"
+        android:duplicateParentState="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/gallery_img" />
+
+    <ImageView
+        android:id="@+id/thumbImageGone"
+        android:layout_width="@dimen/media_gallery_thumb_width"
+        android:layout_height="@dimen/media_gallery_thumb_height"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        android:clickable="false"
+        android:cropToPadding="false"
+        android:duplicateParentState="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/gallery_img"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/itemCheckBox"
+        android:layout_width="@dimen/media_gallery_thumb_width"
+        android:layout_height="@dimen/media_gallery_thumb_height"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:duplicateParentState="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/overlay"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@null"
+        android:clickable="false"
+        android:duplicateParentState="true"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_select"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/videoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:clickable="false"
+        android:duplicateParentState="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/play_video"
+        android:visibility="visible" />
+
+</FrameLayout>

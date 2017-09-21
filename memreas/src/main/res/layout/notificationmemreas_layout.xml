@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="85"
+                android:background="@drawable/hdr_bg"
+                android:weightSum="100" >
+
+                <!-- <FrameLayout -->
+                <!-- android:layout_width="0dp" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_weight="37" > -->
+                <!-- </FrameLayout> -->
+
+                <ImageButton
+                    android:id="@+id/backBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/signup_backbtn_margin"
+                    android:layout_weight="20"
+                    android:background="@drawable/btn_back"
+                    android:onClick="more" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10" >
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/titleView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="47"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:src="@drawable/notification" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10" >
+                </FrameLayout>
+
+                <ImageButton
+                    android:id="@+id/optionBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/memreas_optionbtn_margin"
+                    android:layout_weight="13"
+                    android:background="@drawable/option_icon"
+                    android:onClick="optionBtn"
+                    android:src="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70.7"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="89"
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="55.5"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:weightSum="100" >
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        layout="@layout/notification_layout" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5" >
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                layout="@layout/admob" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.3" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/main_menu_bar" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

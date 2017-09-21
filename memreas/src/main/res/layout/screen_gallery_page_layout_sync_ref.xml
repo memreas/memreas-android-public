@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/syncLyt"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="91" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="96"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="84" >
+
+            <GridView
+                android:id="@+id/syncgridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fastScrollEnabled="true"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/media_gallery_horizontal_space"
+                android:numColumns="3"
+                android:smoothScrollbar="true"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/media_gallery_vertical_space" >
+            </GridView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/syncboxLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="25" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/GreenColor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/gallery_colorbtn_margin_right"
+                    android:layout_weight="11"
+                    android:background="@drawable/backbordergreen" />
+
+                <ImageView
+                    android:id="@+id/YellowColor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/gallery_colorbtn_margin_right"
+                    android:layout_weight="11"
+                    android:background="@drawable/backborderyellow" />
+
+                <ImageView
+                    android:id="@+id/RedColor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/gallery_colorbtn_margin_right"
+                    android:layout_weight="11"
+                    android:background="@drawable/backborderred" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/syncOptionLyt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="30"
+                    android:weightSum="100" >
+
+                    <Button
+                        android:id="@+id/btnSyncClear"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="47"
+                        android:background="@drawable/btn_add"
+                        android:text="@string/gallery_btn_clear"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/gallery_btn_text_size" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6" >
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btnSyncDone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="47"
+                        android:background="@drawable/btn_add"
+                        android:text="@string/gallery_btn_done"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/gallery_btn_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

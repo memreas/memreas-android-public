@@ -1,0 +1,232 @@
+<resources>
+    <dimen name="landing_versiontxt_size">20dp</dimen>
+    
+    <dimen name="signup_backbtn_margin">9dp</dimen>
+    <dimen name="signup_text_margin_left">8dp</dimen>
+    <dimen name="signup_text_margin_right">5dp</dimen>
+    <dimen name="signup_edit_margin_left">10dp</dimen>
+    <dimen name="signup_text_size">24dp</dimen>
+    <dimen name="signup_text_size2">18dp</dimen>
+    <dimen name="signup_edit_text_size">26dp</dimen>
+    <dimen name="signup_text_notify_size">20dp</dimen>
+    <dimen name="signup_check_text_size">28dp</dimen>
+    <dimen name="notification_message_text_size">24dp</dimen>
+    <dimen name="notification_time_text_size">14dp</dimen>
+    
+    <dimen name="login_forgotbtn_margin">10dp</dimen>
+    
+    <dimen name="memreas_btn_text_size">20dp</dimen>
+    <dimen name="memreas_optionbtn_margin">8dp</dimen>
+    
+    <dimen name="option_memreas_btn_margin_bottom">5dp</dimen>
+    
+    <dimen name="add_memreas_btn_text_margin_left">25dp</dimen>
+    <dimen name="add_memreas_text_size">22dp</dimen>
+    <dimen name="add_memreas_space_height">20dp</dimen>
+    <dimen name="add_memreas_space_height1">26dp</dimen>
+    <dimen name="add_memreas_space_half_height">10dp</dimen>
+    <dimen name="add_memreas_notifyview_height">55dp</dimen>
+    <dimen name="add_memreas_namelyt_height">60dp</dimen>
+    <dimen name="add_memreas_datelyt_height">60dp</dimen>
+    <dimen name="add_memreas_locatinlyt_height">60dp</dimen>
+    <dimen name="add_memreas_checkpiclyt_height">35dp</dimen>
+    <dimen name="add_memreas_checkfriendlyt_height">35dp</dimen>
+    <dimen name="add_memreas_checkpubliclyt_height">35dp</dimen>
+    <dimen name="add_memreas_viewablelyt_height">60dp</dimen>
+    <dimen name="add_memreas_destructlyt_height">60dp</dimen>
+    <dimen name="add_memreas_check_text_margin_left">20dp</dimen>
+    <dimen name="add_memreas_comment_margin_left">10dp</dimen>
+    <dimen name="add_memreas_spinner_margin_left">20dp</dimen>
+    
+    <dimen name="custom_memreas_cnt_text_size">18dp</dimen>
+    <dimen name="custom_memreas_cnt_text_margin_left">4dp</dimen>
+    <dimen name="custom_memreas_cmttext_margin_left">10dp</dimen>
+    <dimen name="custom_memreas_cmttext_margin_top">10dp</dimen>
+    <dimen name="custom_memreas_cntr_text_size">18dp</dimen>
+    <dimen name="custom_media_cntr_text_margin_left">4dp</dimen>
+    
+    <dimen name="upload_space_height">25dp</dimen>
+    
+    <dimen name="eventlist_profile_height">100dp</dimen>
+    <dimen name="eventlist_gallery_height">152dp</dimen>
+    <dimen name="eventlist_vertical_space">25dp</dimen>  
+    
+    <dimen name="friendlist_profile_height">98dp</dimen>
+    <dimen name="friendlist_vertical_space">20dp</dimen>
+    
+    <dimen name="media_memreas_horizontal_sapce">30dp</dimen>
+    <dimen name="media_memreas_vertical_space">30dp</dimen>
+    <dimen name="media_gallery_horizontal_space">8dp</dimen>
+    <dimen name="media_gallery_vertical_space">8dp</dimen>
+    <dimen name="media_create_vertical_space">15dp</dimen>
+    <dimen name="media_create__horizontal_space">15dp</dimen>
+    <dimen name="media_memreas_width">152dp</dimen>
+    <dimen name="media_memreas_height">121dp</dimen>
+    <dimen name="media_gallery_back_width">192dp</dimen>
+    <dimen name="media_gallery_back_height">157dp</dimen>
+    <dimen name="media_gallery_thumb_width">176dp</dimen>
+    <dimen name="media_gallery_thumb_height">141dp</dimen>
+    <dimen name="media_create_back_width">162dp</dimen>
+    <dimen name="media_create_back_height">132dp</dimen>
+    <dimen name="media_create_thumb_width">146dp</dimen>
+    <dimen name="media_create_thumb_height">116dp</dimen>
+    <dimen name="media_upload_height">120dp</dimen>    
+    <dimen name="media_memreas_padding">6dp</dimen>    
+    <dimen name="media_memreas_margin_top">20dp</dimen>
+    <dimen name="media_memreas_margin_left">35dp</dimen>
+    <dimen name="media_memreas_margin_right">35dp</dimen>
+    <dimen name="media_memreas_margin_bottom">15dp</dimen>
+    <dimen name="media_create_select_margin_right">13dp</dimen>
+    <dimen name="media_create_select_margin_bottom">13dp</dimen>
+        
+    <dimen name="gallery_colorbtn_margin_right">10dp</dimen>
+    <dimen name="gallery_btn_text_size">20dp</dimen>    
+    
+    <dimen name="edit_item3_width">311dp</dimen>
+    <dimen name="edit_item3_height">224dp</dimen>
+    <dimen name="edit_item4_width">277dp</dimen>
+    <dimen name="edit_item4_height">145dp</dimen>
+    <dimen name="edit_item5_width">277dp</dimen>
+    <dimen name="edit_item5_height">300dp</dimen>
+    <dimen name="edit_item6_width">277dp</dimen>
+    <dimen name="edit_item6_height">184dp</dimen>
+    <dimen name="edit_item7_width">273dp</dimen>
+    <dimen name="edit_item7_height">113dp</dimen>
+    <dimen name="edit_item8_width">279dp</dimen>
+    <dimen name="edit_item8_height">115dp</dimen>
+    <dimen name="edit_item9_width">279dp</dimen>
+    <dimen name="edit_item9_height">115dp</dimen>
+    <dimen name="edit_item10_width">280dp</dimen>
+    <dimen name="edit_item10_height">171dp</dimen>
+    
+    <integer name="add_memreas_spinner_height">140</integer>
+    <integer name="custom_memreas_spinner_height">70</integer>
+    
+    <integer name="grid_num_rows">1</integer>
+  	<integer name="grid_num_cols">4</integer>
+  	
+  	<integer name="edit_item_1_weight">1350</integer>
+  	<integer name="edit_item_2_weight">1260</integer>
+  	<integer name="edit_item_3_weight">1260</integer>
+  	<integer name="edit_item_4_weight">1193</integer>
+  	<integer name="edit_item_5_weight">1170</integer>
+  	<integer name="edit_item_6_weight">1170</integer>
+  	<integer name="edit_item_7_weight">1215</integer>
+  	<integer name="edit_item_8_weight">1215</integer>
+  	<integer name="edit_item_9_weight">1215</integer>
+  	<integer name="edit_item_10_weight">1215</integer>
+  	<integer name="edit_item_11_weight">1283</integer>  	
+  	<integer name="edit_itemview_margin_top">15</integer>
+    
+    <!-- ************************************************** -->
+  
+  <dimen name="forgot_titleview_margin_left">145dp</dimen>
+  <dimen name="forgot_layout1_margin_top">50dp</dimen>
+  <dimen name="forgot_layout2_margin_top">15dp</dimen>
+  <dimen name="forgot_txtview_margin_left">168dp</dimen>
+  <dimen name="forgot_txtview_margin_right">168dp</dimen>
+  <dimen name="forgot_txtview_margin_top">6dp</dimen>
+  <dimen name="forgot_editview_margin_top">3dp</dimen>
+  <dimen name="forgot_editview_txt_margin_left">8dp</dimen>
+  <dimen name="forgot_btn_margin_top">15dp</dimen>
+  
+  <dimen name="subview_padding_right1">10dp</dimen>
+  <dimen name="subview_padding_top1">75dp</dimen>
+  <dimen name="subview_padding_right2">6dp</dimen>
+  <dimen name="subview_padding_top2">3dp</dimen>
+  
+  <dimen name="item3_1_padding_left">11dp</dimen>
+  <dimen name="item3_1_padding_top">3dp</dimen>
+  <dimen name="item3_2_padding_left">11dp</dimen>
+  <dimen name="item3_3_padding_left">11dp</dimen>
+  <dimen name="item3_3_padding_bottom">1dp</dimen>
+  <dimen name="item3_4_padding_left">11dp</dimen>
+  <dimen name="item3_5_padding_left">11dp</dimen>
+  <dimen name="item4_1_padding_left">7dp</dimen>
+  <dimen name="item4_2_padding_left">9dp</dimen>
+  <dimen name="item4_2_padding_top">2dp</dimen>
+  <dimen name="item5_1_padding_left">11dp</dimen>
+  <dimen name="item5_1_padding_top">12dp</dimen>
+  <dimen name="item5_2_padding_left">2dp</dimen>
+  <dimen name="item5_2_padding_top">9dp</dimen>
+  <dimen name="item5_3_padding_left">2dp</dimen>
+  <dimen name="item5_3_padding_top">12dp</dimen>
+  <dimen name="item5_4_padding_left">11dp</dimen>
+  <dimen name="item5_4_padding_top">7dp</dimen>
+  <dimen name="item5_5_padding_left">2dp</dimen>
+  <dimen name="item5_5_padding_top">7dp</dimen>
+  <dimen name="item5_6_padding_left">2dp</dimen>
+  <dimen name="item5_6_padding_top">4dp</dimen>
+  <dimen name="item5_7_padding_left">11dp</dimen>
+  <dimen name="item5_7_padding_top">3dp</dimen>
+  <dimen name="item5_8_padding_left">2dp</dimen>
+  <dimen name="item5_8_padding_top">8dp</dimen>
+  <dimen name="item5_9_padding_left">2dp</dimen>
+  <dimen name="item5_9_padding_top">8dp</dimen>
+  <dimen name="item6_1_padding_left">8dp</dimen>
+  <dimen name="item6_1_padding_top">8dp</dimen>
+  <dimen name="item6_2_padding_left">5dp</dimen>
+  <dimen name="item6_2_padding_top">9dp</dimen>
+  <dimen name="item6_3_padding_left">5dp</dimen>
+  <dimen name="item6_3_padding_top">6dp</dimen>
+  <dimen name="item6_4_padding_left">6dp</dimen>
+  <dimen name="item6_4_padding_top">1dp</dimen>
+  <dimen name="item6_5_padding_left">4dp</dimen>
+  <dimen name="item6_5_padding_top">4dp</dimen>
+  <dimen name="item6_6_padding_left">4dp</dimen>
+  <dimen name="item6_6_padding_top">5dp</dimen>
+  <dimen name="item7_1_padding_left">7dp</dimen>
+  <dimen name="item7_1_padding_top">11dp</dimen>
+  <dimen name="item7_2_padding_left">2dp</dimen>
+  <dimen name="item7_2_padding_top">6dp</dimen>
+  <dimen name="item8_1_padding_left">8dp</dimen>
+  <dimen name="item8_1_padding_top">11dp</dimen>
+  <dimen name="item8_2_padding_left">8dp</dimen>
+  <dimen name="item8_2_padding_top">4dp</dimen>
+  <dimen name="item9_1_padding_left">8dp</dimen>
+  <dimen name="item9_1_padding_top">10dp</dimen>
+  <dimen name="item9_2_padding_left">8dp</dimen>
+  <dimen name="item9_2_padding_top">3dp</dimen>
+  <dimen name="item10_1_padding_left">7dp</dimen>
+  <dimen name="item10_1_padding_top">11dp</dimen>
+  <dimen name="item10_2_padding_left">7dp</dimen>
+  <dimen name="item10_3_padding_left">7dp</dimen>
+  <dimen name="item10_3_padding_top">4dp</dimen>
+  
+  <dimen name="likebtn_margin_left">40dp</dimen>
+  <dimen name="liketxt_margin_top">2dp</dimen>
+  <dimen name="liketxt_txt_margin_left">1dp</dimen>
+  <dimen name="liketxt_txt_margin_top">0dp</dimen>
+  <dimen name="commitbtn_margin_left">30dp</dimen>
+  <dimen name="commitbtn_margin_top">2dp</dimen>
+  <dimen name="smallpic1_margin_left">30dp</dimen>
+  <dimen name="smallpic2_margin_left">20dp</dimen>
+  <dimen name="smallpic3_margin_left">20dp</dimen>
+  <dimen name="commentpic_margin_left">40dp</dimen>
+  <dimen name="commentpic_margin_bottom">8dp</dimen>
+  <dimen name="commenttxt_margin_left">15dp</dimen>
+  <dimen name="commenttxt_margin_right">40dp</dimen>  
+  <dimen name="commenttxt_margin_bottom">8dp</dimen>
+  <dimen name="commenttxt_txt_margin_left">10dp</dimen>
+  <dimen name="commenttxt_txt_mragin_top">5dp</dimen>
+  <dimen name="search_edtitext_height">70dp</dimen>
+  
+  <dimen name="memreas_tab_height">50dp</dimen>
+  
+  <dimen name="search_button_height">50dp</dimen>
+  <dimen name="default_selection_height">40dp</dimen>
+  <dimen name="default_button_height">45dp</dimen>
+  <dimen name="default_space">12dp</dimen>
+  
+  <dimen name="notification_dialog_conner">15dp</dimen>
+  <dimen name="notification_dialog_textbox_conner">10dp</dimen>
+  <dimen name="notification_dialog_title_size">24sp</dimen>
+  <dimen name="notification_number_conner">25dp</dimen>
+  <dimen name="notification_number_text_size">20sp</dimen>
+  <dimen name="notification_number_size">50dp</dimen>
+   
+   <dimen name="selector_menu_height">52dp</dimen>
+    <dimen name="menu_item_margin">20dp</dimen>
+    <dimen name="btn_show_hide_radius">20dp</dimen>
+    <dimen name="btn_show_hide_height">40dp</dimen>
+</resources>

@@ -1,0 +1,677 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <!-- Back Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="85"
+                android:background="@drawable/hdr_bg"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </FrameLayout>
+
+                <ImageButton
+                    android:id="@+id/backBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/signup_backbtn_margin"
+                    android:layout_weight="16"
+                    android:background="@drawable/btn_back"
+                    android:onClick="back" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15" >
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/titleView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="30"
+                    android:background="@null"
+                    android:src="@drawable/txt_signup" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="38" >
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Center layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <!-- Center layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="18"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5" >
+                </FrameLayout>
+
+                <!-- Profile Pic layout -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="18"
+                    android:orientation="vertical"
+                    android:weightSum="100" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="18" >
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/imgProfilePic"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="28"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile_img" />
+ 
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="12" >
+                    </FrameLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                </FrameLayout>
+
+                <!-- Profile Pic layout -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:orientation="vertical"
+                    android:weightSum="100" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="30" >
+                    </FrameLayout>
+
+                    <ImageButton
+                        android:id="@+id/btnAddProfilePic"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="48"
+                        android:background="@drawable/choose_profile_pic"
+                        android:onClick="profilePicSelection" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="22" >
+                    </FrameLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5" >
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="68"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5" >
+                </FrameLayout>
+
+                <!-- Text inputs layout -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"
+                    android:orientation="vertical"
+                    android:weightSum="100" >
+
+                    <!-- email layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="17"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="37" >
+
+                            <TextView
+                                android:id="@+id/lblEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="left|bottom"
+                                android:paddingLeft="@dimen/signup_text_margin_left"
+                                android:text="@string/register_email"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/signup_text_size" />
+
+                            <TextView
+                                android:id="@+id/tvVerEmail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:gravity="right|bottom"
+                                android:paddingRight="@dimen/signup_text_margin_right"
+                                android:singleLine="true"
+                                android:textColor="#FF0000"
+                                android:textSize="@dimen/signup_text_notify_size" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="63" >
+
+                            <EditText
+                                android:id="@+id/txtEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_bg_reg"
+                                android:cursorVisible="true"
+                                android:ems="4"
+                                android:gravity="center_vertical"
+                                android:hint="@string/register_email_hint"
+                                android:inputType="textEmailAddress"
+                                android:paddingLeft="@dimen/signup_edit_margin_left"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@drawable/edittext_cursor"
+                                android:textSize="@dimen/signup_edit_text_size" >
+
+                                <requestFocus />
+                            </EditText>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5" >
+                    </FrameLayout>
+
+                    <!-- username layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="17"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="37" >
+
+                            <TextView
+                                android:id="@+id/lblUsername"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="left|bottom"
+                                android:paddingLeft="@dimen/signup_text_margin_left"
+                                android:text="@string/register_username"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/signup_text_size" />
+
+                            <TextView
+                                android:id="@+id/tvVerUsername"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:gravity="right|bottom"
+                                android:paddingRight="@dimen/signup_text_margin_right"
+                                android:singleLine="true"
+                                android:textColor="#FF0000"
+                                android:textSize="@dimen/signup_text_notify_size" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="63" >
+
+                            <EditText
+                                android:id="@+id/txtUsername"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_bg_reg"
+                                android:cursorVisible="true"
+                                android:ems="4"
+                                android:hint="@string/register_usename_hint"
+                                android:inputType="textEmailSubject"
+                                android:paddingLeft="@dimen/signup_edit_margin_left"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@drawable/edittext_cursor"
+                                android:textSize="@dimen/signup_edit_text_size" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5" >
+                    </FrameLayout>
+
+                    <!-- password layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="17"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="37" >
+
+                            <TextView
+                                android:id="@+id/lblPassword"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="left|bottom"
+                                android:paddingLeft="@dimen/signup_text_margin_left"
+                                android:text="@string/register_password"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/signup_text_size" />
+
+                            <TextView
+                                android:id="@+id/tvPassword"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="60"
+                                android:gravity="right|bottom"
+                                android:paddingRight="@dimen/signup_text_margin_right"
+                                android:singleLine="true"
+                                android:textColor="#FF0000"
+                                android:textSize="@dimen/signup_text_notify_size" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="63" >
+
+                            <EditText
+                                android:id="@+id/txtPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_bg_reg"
+                                android:cursorVisible="true"
+                                android:ems="4"
+                                android:hint="@string/register_password_hint"
+                                android:inputType="textPassword"
+                                android:paddingLeft="@dimen/signup_edit_margin_left"
+                                android:password="true"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@drawable/edittext_cursor"
+                                android:textSize="@dimen/signup_edit_text_size" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5" >
+                    </FrameLayout>
+
+                    <!-- verify password layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="17"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="37" >
+
+                            <TextView
+                                android:id="@+id/lblVerPassword"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="left|bottom"
+                                android:paddingLeft="@dimen/signup_text_margin_left"
+                                android:text="@string/register_verify_password"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/signup_text_size" />
+
+                            <TextView
+                                android:id="@+id/tvVerPassword"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:gravity="right|bottom"
+                                android:paddingLeft="@dimen/signup_edit_margin_left"
+                                android:singleLine="true"
+                                android:textColor="#FF0000"
+                                android:textSize="@dimen/signup_text_notify_size" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="63" >
+
+                            <EditText
+                                android:id="@+id/txtVerifyPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_bg_reg"
+                                android:cursorVisible="true"
+                                android:ems="4"
+                                android:gravity="center_vertical"
+                                android:hint="@string/register_verify_password_hint"
+                                android:inputType="textPassword"
+                                android:paddingLeft="@dimen/signup_edit_margin_left"
+                                android:password="true"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@drawable/edittext_cursor"
+                                android:textSize="@dimen/signup_edit_text_size" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+                    </FrameLayout>
+
+                    <!-- invited by layout (gone) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="12"
+                        android:orientation="vertical"
+                        android:weightSum="100"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="37"
+                            android:visibility="gone"
+                            android:weightSum="100" >
+
+                            <TextView
+                                android:id="@+id/lblInvite"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="54"
+                                android:gravity="left|bottom"
+                                android:paddingLeft="@dimen/signup_text_margin_left"
+                                android:text="@string/register_invite"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/signup_text_size" />
+
+                            <TextView
+                                android:id="@+id/tvVerInvite"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="46"
+                                android:gravity="right|bottom"
+                                android:paddingRight="@dimen/signup_text_margin_right"
+                                android:singleLine="true"
+                                android:textColor="#FF0000"
+                                android:textSize="@dimen/signup_text_notify_size" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="63"
+                            android:visibility="gone" >
+
+                            <EditText
+                                android:id="@+id/txtInvite"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_bg_reg"
+                                android:cursorVisible="true"
+                                android:ems="4"
+                                android:hint="@string/register_invite_hint"
+                                android:inputType="textEmailAddress"
+                                android:paddingLeft="@dimen/signup_edit_margin_left"
+                                android:singleLine="true"
+                                android:textSize="@dimen/signup_edit_text_size" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <!-- terms of service layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="11"
+                        android:weightSum="100" >
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20" >
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="60"
+                            android:orientation="vertical"
+                            android:weightSum="100" >
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="36" >
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="60"
+                                android:weightSum="100" >
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4" >
+                                </FrameLayout>
+
+                                <com.memreas.util.SquareImageView
+                                    android:id="@+id/imgChecked"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="13"
+                                    android:src="@drawable/btn_uncheck" />
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4" >
+                                </FrameLayout>
+
+                                <TextView
+                                    android:id="@+id/lblLegalDisclaimer"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="75"
+                                    android:clickable="true"
+                                    android:gravity="center_vertical"
+                                    android:onClick="viewTermOfService"
+                                    android:text="@string/register_check_text"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/signup_check_text_size" />
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4" >
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4" >
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20" >
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5" >
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="14"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="22" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="56"
+                    android:orientation="vertical"
+                    android:weightSum="100" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5" >
+                    </FrameLayout>
+
+                    <ImageButton
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="58"
+                        android:background="@drawable/btn_submit" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="28"
+                        android:gravity="top|center_horizontal"
+                        android:text="© memreas llc 2013-2014" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="22" >
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:drawable/alert_light_frame"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/percentageTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <include
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            layout="@layout/loading" />
+    </LinearLayout>
+
+</RelativeLayout>

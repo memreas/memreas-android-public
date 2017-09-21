@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headerMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="9" >
+
+    <Button
+        android:id="@+id/btnViewGallery"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/btn_black"
+        android:text="@string/gallery_btn_view"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/memreas_btn_text_size" />
+
+    <Button
+        android:id="@+id/btnShootView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/btn_gray"
+        android:text="@string/gallery_btn_shoot"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/memreas_btn_text_size" />
+
+    <Button
+        android:id="@+id/btnSyncBtn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/btn_gray"
+        android:text="@string/gallery_btn_sync"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/memreas_btn_text_size" />
+
+    <Button
+        android:id="@+id/btnLocationBtn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/btn_gray"
+        android:text="@string/gallery_btn_location"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/memreas_btn_text_size" />
+
+</LinearLayout>

@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/memreas_event_gallery_LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="100" >
+
+    <!-- profile and name section start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="100" >
+
+		<include
+		    android:id="@+id/galleryProfile"
+		    layout="@layout/memreas_event_details_profile"
+		    android:layout_height="match_parent" 
+		    android:layout_width="0dp" 
+		    android:layout_weight="25"
+		    android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="75"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="start|fill_horizontal"
+                android:layout_weight="50"
+                android:padding="2dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/txtGalleryEventName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_vertical"
+                    android:background="@drawable/edittext_bg_friend"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="!Event Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/signup_text_size"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="start|center_horizontal"
+                android:layout_weight="50"
+                android:gravity="start"
+                android:padding="2dp"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    android:weightSum="100" >
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:layout_weight="20"
+                        android:gravity="start"
+                        android:padding="4dp" >
+
+                        <ImageView
+                            android:id="@+id/btn_like"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/btn_like" />
+
+                        <TextView
+                            android:id="@+id/txt_like"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="100"
+                            android:textColor="@android:color/white"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="20"
+                        android:padding="2dp" >
+
+                        <ImageView
+                            android:id="@+id/btn_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/btn_comment" />
+
+                        <TextView
+                            android:id="@+id/txt_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="100"
+                            android:textColor="@android:color/white"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="60"
+                        android:padding="2dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp" >
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center" >
+
+                            <LinearLayout
+                                android:id="@+id/friendsLinearLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal" >
+
+                                <!-- memreas_event_gallery_friend_item add via code here... -->
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- like, comment, and friends list section end -->
+
+
+    <!-- event media section start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/memreas_event_media_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:fastScrollEnabled="true"
+            android:horizontalSpacing="@dimen/media_gallery_horizontal_space"
+            android:numColumns="3"
+            android:smoothScrollbar="true"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/media_gallery_vertical_space" >
+        </GridView>
+    </LinearLayout>
+    <!-- event media section end -->
+
+
+    <!-- event comment section start -->
+
+    <LinearLayout
+        android:id="@+id/memreas_event_gallery_comments_viewpager_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/memreas_event_gallery_comments_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="@integer/comment_cols" />
+
+        <!-- <include  layout="@layout/memreas_event_gallery_comment_item" /> -->
+
+    </LinearLayout>
+    <!-- event comment section end -->
+
+</LinearLayout>

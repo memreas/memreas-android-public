@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <!-- Include Gallery View Layout here... -->
+            <include layout="@layout/screen_header_ref" /> 
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70.7"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="89"
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3" >
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btnMemreasDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7.5"
+                    android:background="@drawable/dropdown_black"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                    android:text="@string/memreas_create_detail"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+
+                <!-- Include ScrollView Details Layout here... -->
+            	<include layout="@layout/screen_share_page_layout_details_ref" /> -->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3" >
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btnMedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7.5"
+                    android:background="@drawable/dropdown_black"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                    android:text="@string/memreas_create_media"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3" >
+                </FrameLayout>
+
+                <!-- Include ScrollView Media Layout here... -->
+            		<include layout="@layout/screen_share_page_layout_media_ref" /> 
+
+                <Button
+                    android:id="@+id/btnFriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7.5"
+                    android:background="@drawable/dropdown_black"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                    android:text="@string/memreas_create_friends"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3" >
+                </FrameLayout>
+
+                <!-- Include ScrollView Friends Layout here... -->
+            		<include layout="@layout/screen_share_page_layout_friends_ref" /> 
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center"
+                    android:weightSum="100" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" />
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:background="@drawable/btn_add"
+                        android:text="@string/memreas_create_next"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/memreas_btn_text_size" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" />
+
+                    <Button
+                        android:id="@+id/btnDone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:background="@drawable/btn_add"
+                        android:text="@string/memreas_create_done"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/memreas_btn_text_size" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" />
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:background="@drawable/btn_add"
+                        android:text="@string/memreas_create_cancel"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/memreas_btn_text_size" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5" >
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                layout="@layout/admob" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.3" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/main_menu_bar" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

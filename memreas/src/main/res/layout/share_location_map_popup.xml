@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mini_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_share_name"
+            android:gravity="center_vertical" >
+
+            <AutoCompleteTextView
+                android:id="@+id/edt_adress"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="4"
+                android:hint="@string/memreas_custom_btn_enter_location"
+                android:imeOptions="actionDone"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textSize="16sp" >
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <ImageView
+                android:id="@+id/ic_search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:onClick="search"
+                android:src="@drawable/ic_search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="39"
+            android:background="@drawable/btn_add"
+            android:onClick="okButton"
+            android:text="@string/gallery_location_btn_ok"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/memreas_btn_text_size" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="39"
+            android:background="@drawable/btn_add"
+            android:onClick="cancelButton"
+            android:text="@string/gallery_location_btn_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/memreas_btn_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

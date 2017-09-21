@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ScaledView">
+        <attr name="ScaledImageViewStyle" format="reference" />
+    </declare-styleable>
+
+    <attr name="sizeScaleType">
+        <enum name="width" value="0" />
+        <enum name="height" value="1" />
+    </attr>
+
+    <declare-styleable name="ScaledImageView">
+        <attr name="sizeScaleType" />
+        <attr name="scaleWidth" format="float" />
+        <attr name="scaleHeight" format="float" />
+    </declare-styleable>
+    <declare-styleable name="RoundedCornerImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="round_background" format="boolean" />
+        <attr name="is_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+</resources>

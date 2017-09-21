@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+    android:background="@drawable/background_main"
+    android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/hdr_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/comment_text" />
+        </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <!-- Include Audio Screen View Layout here... -->
+
+        <include layout="@layout/screen_audio_comment" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="@string/memreas_create_comment_text"
+                android:textColor="#fff"
+                android:textSize="@dimen/signup_edit_text_size" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <EditText
+                android:id="@+id/addCommentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:hint="@string/memreas_custom_media_comment_hint"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:padding="2dp"
+                android:textSize="@dimen/signup_edit_text_size" >
+
+                <requestFocus />
+            </EditText>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_add"
+                android:text="@string/gallery_location_btn_ok"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/memreas_btn_text_size" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_add"
+                android:onClick="cancelButton"
+                android:text="@string/gallery_location_btn_cancel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/memreas_btn_text_size" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

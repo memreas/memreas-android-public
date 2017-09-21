@@ -1,0 +1,472 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <!-- Include Gallery View Layout here... -->
+            <include layout="@layout/screen_header_ref"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70.7"
+            android:weightSum="100">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5">
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="89"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/selector_menu_height"
+                        android:layout_marginTop="@dimen/menu_item_margin"
+                        android:background="@drawable/dropdown_black"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                        android:text="@string/memreas_more_account"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/memreas_btn_text_size"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutMorePageAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:weightSum="100">
+
+                            <FrameLayout
+                                android:layout_width="@dimen/friend_event_profile_width"
+                                android:layout_height="@dimen/friend_event_profile_height"
+                                android:layout_gravity="start"
+                                android:layout_weight="30"
+                                android:background="@drawable/rounded_corner"
+                                android:gravity="start"
+                                android:paddingRight="2dp">
+
+                                <ImageView
+                                    android:id="@+id/profilePicMorePageImageView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="2dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/profile_img_small"/>
+
+                                <!-- include layout="@layout/util_rounded_image" -->
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="70"
+                                android:gravity="center"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp">
+
+                                <TextView
+                                    android:id="@+id/morePageAccountTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="fill_horizontal"
+                                    android:background="@drawable/edittext_bg_friend"
+                                    android:gravity="center|center_vertical"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:text="Friend_Name"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/signup_text_size"
+                                    android:textStyle="bold"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btnMemberGuidelines"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/selector_menu_height"
+                        android:layout_marginTop="@dimen/menu_item_margin"
+                        android:background="@drawable/dropdown_black"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                        android:text="@string/memreas_more_member_guidelines"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/memreas_btn_text_size"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutMorePageMemberGuidelinesPolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="100">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="98"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height">
+                                </FrameLayout>
+
+                                <WebView
+                                    android:id="@+id/morePageMemberGuidelinesWebView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:animationCache="false"
+                                    android:background="@android:color/transparent"
+                                    android:isScrollContainer="true"
+                                    android:orientation="vertical"
+                                    android:overScrollMode="never"/>
+
+
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnPrivacyPolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/selector_menu_height"
+                        android:layout_marginTop="@dimen/menu_item_margin"
+                        android:background="@drawable/dropdown_black"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                        android:text="@string/memreas_more_privacy_policy"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/memreas_btn_text_size"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutMorePagePrivacyPolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="100">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="98"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height">
+                                </FrameLayout>
+
+                                <WebView
+                                    android:id="@+id/morePagePrivacyPolicyWebView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:animationCache="false"
+                                    android:background="@android:color/transparent"
+                                    android:isScrollContainer="true"
+                                    android:orientation="vertical"/>
+
+
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnDmcaPolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/selector_menu_height"
+                        android:layout_marginTop="@dimen/menu_item_margin"
+                        android:background="@drawable/dropdown_black"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                        android:text="@string/memreas_more_dmca_policy"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/memreas_btn_text_size"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutMorePageDmcaPolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="100">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="98"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height">
+                                </FrameLayout>
+
+                                <WebView
+                                    android:id="@+id/morePageDmcaPolicyWebView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:animationCache="false"
+                                    android:background="@android:color/transparent"
+                                    android:isScrollContainer="true"
+                                    android:orientation="vertical"/>
+
+
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnTermsOfService"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/selector_menu_height"
+                        android:layout_marginTop="@dimen/menu_item_margin"
+                        android:background="@drawable/dropdown_black"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                        android:text="@string/memreas_more_terms_of_service"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/memreas_btn_text_size"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutMorePageTermsOfService"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="100">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="98"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height">
+                                </FrameLayout>
+
+                                <WebView
+                                    android:id="@+id/morePageTermsOfServiceWebView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:animationCache="false"
+                                    android:background="@android:color/transparent"
+                                    android:isScrollContainer="true"
+                                    android:orientation="vertical"/>
+
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnVersion"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/selector_menu_height"
+                        android:layout_marginTop="@dimen/menu_item_margin"
+                        android:background="@drawable/dropdown_black"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="@dimen/add_memreas_btn_text_margin_left"
+                        android:text="@string/memreas_more_version"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/memreas_btn_text_size"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutMorePageVersion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="100">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="98"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_space_height">
+                                </FrameLayout>
+
+                                <TextView
+                                    android:id="@+id/morePageVersionTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/add_memreas_notifyview_height"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:singleLine="true"
+                                    android:text="@string/AppVersion"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/add_memreas_text_size"/>
+
+
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5">
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <include
+                layout="@layout/admob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.3">
+
+            <include
+                layout="@layout/main_menu_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

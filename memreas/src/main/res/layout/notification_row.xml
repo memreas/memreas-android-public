@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="100" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7" >
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="93"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="25" >
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_notification"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="55"
+                android:background="@null"
+                android:src="@drawable/right_icon" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20" >
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_notification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="91"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/signup_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

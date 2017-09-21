@@ -1,0 +1,169 @@
+<resources>
+    <dimen name="landing_versiontxt_size">14dp</dimen>
+    
+    <dimen name="signup_backbtn_margin">5dp</dimen>
+    <dimen name="signup_text_margin_left">5dp</dimen>
+    <dimen name="signup_text_margin_right">3dp</dimen>
+    <dimen name="signup_edit_margin_left">5dp</dimen>
+    <dimen name="signup_text_size">16dp</dimen>
+    <dimen name="signup_text_size2">14dp</dimen>
+    <dimen name="signup_edit_text_size">18dp</dimen>
+    <dimen name="signup_text_notify_size">12dp</dimen>
+     <dimen name="notification_message_text_size">16dp</dimen>
+    <dimen name="notification_time_text_size">10dp</dimen>
+    
+      <dimen name="signup_text_notify_10dp">9dp</dimen>
+    <dimen name="signup_check_text_size">16dp</dimen>
+    
+    <dimen name="login_forgotbtn_margin">7dp</dimen>
+    
+    <dimen name="memreas_btn_text_size">12dp</dimen>
+    <dimen name="memreas_optionbtn_margin">5dp</dimen>
+    
+    <dimen name="option_memreas_btn_margin_bottom">2dp</dimen>   
+     
+    <dimen name="add_memreas_btn_text_margin_left">15dp</dimen>
+    <dimen name="add_memreas_text_size">14dp</dimen>
+    <dimen name="add_memreas_space_height">8dp</dimen>
+    <dimen name="add_memreas_space_height1">11dp</dimen>
+    <dimen name="add_memreas_space_half_height">4dp</dimen>
+    <dimen name="add_memreas_notifyview_height">30dp</dimen>
+    <dimen name="add_memreas_namelyt_height">35dp</dimen>
+    <dimen name="add_memreas_datelyt_height">35dp</dimen>
+    <dimen name="add_memreas_locatinlyt_height">35dp</dimen>
+    <dimen name="add_memreas_checkpiclyt_height">21dp</dimen>    
+    <dimen name="add_memreas_checkfriendlyt_height">21dp</dimen>
+    <dimen name="add_memreas_checkpubliclyt_height">21dp</dimen>
+    <dimen name="add_memreas_viewablelyt_height">35dp</dimen>
+    <dimen name="add_memreas_destructlyt_height">35dp</dimen>
+    <dimen name="add_memreas_check_text_margin_left">10dp</dimen>
+    <dimen name="add_memreas_comment_margin_left">5dp</dimen>
+    <dimen name="add_memreas_spinner_margin_left">10dp</dimen>
+    
+    <dimen name="custom_memreas_cnt_text_size">10dp</dimen>
+    <dimen name="custom_memreas_cnt_text_margin_left">2dp</dimen>
+    <dimen name="custom_memreas_cmttext_margin_left">5dp</dimen>
+    <dimen name="custom_memreas_cmttext_margin_top">5dp</dimen>
+    <dimen name="custom_memreas_cntr_text_size">10dp</dimen>
+    <dimen name="custom_media_cntr_text_margin_left">1dp</dimen>
+    
+    <dimen name="upload_space_height">10dp</dimen>
+    
+    <dimen name="eventlist_profile_height">62dp</dimen>
+    <dimen name="eventlist_gallery_height">92dp</dimen>
+    <dimen name="eventlist_vertical_space">15dp</dimen>
+
+    <dimen name="public_event_gallery_height">100dp</dimen>
+    <dimen name="public_event_gallery_width">100dp</dimen>
+    <dimen name="public_event_profile_height">40dp</dimen>
+    <dimen name="public_event_profile_width">40dp</dimen>
+    <dimen name="public_event_creator_height">50dp</dimen>
+    <dimen name="public_event_creator_width">50dp</dimen>
+    
+    
+    <dimen name="friend_event_profile_height">80dp</dimen>
+    <dimen name="friend_event_profile_width">80dp</dimen>
+    <dimen name="friend_event_profile_border_height">100dp</dimen>
+    <dimen name="friend_event_profile_border_width">120dp</dimen>
+    <dimen name="friendlist_profile_height">60dp</dimen>
+    <dimen name="friendlist_vertical_space">10dp</dimen>
+    <dimen name="friendlist_text_size">15dp</dimen>
+    <dimen name="friendlist_checkbox_height">30dp</dimen>
+    <dimen name="friendlist_checkbox_width">30dp</dimen>
+    
+    
+    <dimen name="media_memreas_horizontal_sapce">20dp</dimen>
+    <dimen name="media_memreas_vertical_space">20dp</dimen>
+    <dimen name="media_gallery_horizontal_space">5dp</dimen>
+    <dimen name="media_gallery_vertical_space">5dp</dimen>
+    <dimen name="media_create_vertical_space">10dp</dimen>
+    <dimen name="media_create_horizontal_space">10dp</dimen>
+    <dimen name="media_memreas_width">88dp</dimen>
+    <dimen name="media_memreas_height">70dp</dimen>
+    <dimen name="media_gallery_back_width">114dp</dimen>
+    <dimen name="media_gallery_back_height">92dp</dimen>
+    <dimen name="media_gallery_thumb_width">106dp</dimen>
+    <dimen name="media_gallery_thumb_height">84dp</dimen>
+    <dimen name="media_create_back_width">96dp</dimen>
+    <dimen name="media_create_back_height">78dp</dimen>
+    <dimen name="media_create_thumb_width">88dp</dimen>
+    <dimen name="media_create_thumb_height">70dp</dimen>
+    <dimen name="media_upload_height">66dp</dimen>
+    <dimen name="media_memreas_padding">4dp</dimen>    
+    <dimen name="media_memreas_profile_padding">2dp</dimen>    
+    <dimen name="media_memreas_margin_top">10dp</dimen>
+    <dimen name="media_memreas_margin_left">20dp</dimen>
+    <dimen name="media_memreas_margin_right">20dp</dimen>
+    <dimen name="media_memreas_margin_bottom">5dp</dimen>
+    <dimen name="media_create_select_margin_right">6dp</dimen>
+    <dimen name="media_create_select_margin_bottom">6dp</dimen>
+        
+    <dimen name="gallery_colorbtn_margin_right">5dp</dimen>
+    <dimen name="gallery_btn_text_size">12dp</dimen>    
+    
+    <integer name="add_memreas_spinner_height">133</integer>
+    <integer name="custom_memreas_spinner_height">65</integer>
+    
+    <integer name="grid_num_rows">1</integer>
+    	<integer name="grid_num_cols">4</integer>
+
+    	<integer name="comment_cols">1</integer>
+  	
+    <!-- ************************************************** -->
+  
+  <dimen name="forgot_titleview_margin_left">4dp</dimen>
+  <dimen name="forgot_layout1_margin_top">30dp</dimen>
+  <dimen name="forgot_layout2_margin_top">10dp</dimen>
+  <dimen name="forgot_txtview_margin_left">27dp</dimen>
+  <dimen name="forgot_txtview_margin_right">27dp</dimen>
+  <dimen name="forgot_txtview_margin_top">5dp</dimen>
+  <dimen name="forgot_editview_margin_top">3dp</dimen>
+  <dimen name="forgot_editview_txt_margin_left">5dp</dimen>
+  <dimen name="forgot_btn_margin_top">15dp</dimen>
+  
+  <dimen name="likebtn_margin_left">25dp</dimen>
+  <dimen name="liketxt_margin_top">1dp</dimen>
+  <dimen name="liketxt_txt_margin_left">3dp</dimen>
+  <dimen name="liketxt_txt_margin_top">4dp</dimen>
+  <dimen name="commitbtn_margin_left">20dp</dimen>
+  <dimen name="commitbtn_margin_top">2dp</dimen>
+  <dimen name="smallpic1_margin_left">20dp</dimen>
+  <dimen name="smallpic2_margin_left">17dp</dimen>
+  <dimen name="smallpic3_margin_left">17dp</dimen>
+  <dimen name="commentpic_margin_left">25dp</dimen>
+  <dimen name="commentpic_margin_bottom">5dp</dimen>
+  <dimen name="commenttxt_margin_left">10dp</dimen>
+  <dimen name="commenttxt_margin_right">30dp</dimen>
+  <dimen name="commenttxt_margin_bottom">5dp</dimen>
+  <dimen name="commenttxt_txt_margin_left">10dp</dimen>
+  <dimen name="commenttxt_txt_mragin_top">3dp</dimen>
+  
+  
+  
+  <dimen name="padding_small">4dp</dimen>
+  <dimen name="padding_medium">8dp</dimen>
+  <dimen name="padding_large">16dp</dimen>  
+  
+  <dimen name="image_pager_bottom_padding">3dp</dimen>
+  <dimen name="image_pager_lyt_height">82dp</dimen>
+  
+ <dimen name="memreas_tab_height">30dp</dimen>
+  
+  <dimen name="search_edtitext_height">40dp</dimen>
+  <dimen name="search_button_height">35dp</dimen>
+  <dimen name="default_selection_height">25dp</dimen>
+  <dimen name="default_button_height">25dp</dimen>
+  <dimen name="default_space">10dp</dimen>
+  
+  <dimen name="notification_dialog_conner">10dp</dimen>
+  <dimen name="notification_dialog_textbox_conner">5dp</dimen>
+  <dimen name="notification_dialog_title_size">18sp</dimen>
+  <dimen name="notification_number_conner">15dp</dimen>
+  <dimen name="notification_number_text_size">16sp</dimen>
+  <dimen name="notification_number_size">30dp</dimen>
+  
+   <dimen name="selector_menu_height">35dp</dimen>
+   <dimen name="menu_item_margin">17dp</dimen>
+    <dimen name="btn_show_hide_radius">10dp</dimen>
+    <dimen name="btn_show_hide_height">20dp</dimen>
+</resources>

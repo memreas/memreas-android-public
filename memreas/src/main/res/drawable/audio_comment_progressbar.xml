@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/audio_seek_bar_background">
+
+        <!--
+        <shape>
+            <corners android:radius="2dip" />
+
+
+            <gradient
+                android:angle="90"
+                android:centerColor="#101010"
+                android:centerY="0.5"
+                android:endColor="#88101010"
+                android:startColor="#101010" />
+        </shape>
+        -->
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@drawable/audio_seek_bar_progress" >
+
+            <!--
+            <shape>
+                <corners android:radius="2dip" />
+
+                <gradient
+                    android:angle="90"
+                    android:endColor="#abacad"
+                    android:startColor="#abacad" />
+            </shape>
+            -->
+        </clip>
+    </item>
+
+</layer-list>

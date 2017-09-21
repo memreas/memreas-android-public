@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ic_arrow"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/notification_popup_window_bg"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notification_popup_title_bg" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" >
+                </FrameLayout>
+
+                <com.memreas.util.SquareImageView
+                    android:id="@+id/ic_refresh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/notif_icon" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" >
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="66"
+                    android:text="@string/notification_dropdown"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/signup_edit_text_size" />
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/search_button_height"
+                    android:layout_weight="20"
+                    android:background="@drawable/btn_bg_1"
+                    android:paddingBottom="@dimen/option_memreas_btn_margin_bottom"
+                    android:text="@string/option_memreas_logout"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/signup_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#134e94" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/list_notification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#90aed1"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" >
+            </ListView>
+
+<!--         <include layout="@layout/notification_popupwindow_item_ref" /> -->
+<!--         <include layout="@layout/notification_item" /> -->
+        
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/loading_bar" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ic_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/notification_arrow" />
+
+</RelativeLayout>

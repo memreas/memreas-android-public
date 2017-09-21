@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_main" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/hdr_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/comment_text" />
+    </LinearLayout>
+
+    <!-- <include layout="@layout/memreas_event_list_comments_dialog_item" /> -->
+
+    <ListView
+        android:id="@+id/memreas_event_comment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/notification_dialog_divider"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/memreas_event_comment_ListView_Empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_bg_friend"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="@string/memreas_event_details_no_comments"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/signup_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/doneBtn"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_add"
+                android:text="@string/gallery_btn_done"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/memreas_btn_text_size" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

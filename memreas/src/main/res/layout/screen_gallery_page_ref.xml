@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RootLyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <!-- Include Gallery View Layout here... -->
+            <include layout="@layout/screen_header_ref" /> 
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="71"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+
+            <!-- Include Gallery Tab bar (view, edit, sync, location) Layout here... -->
+            <include layout="@layout/screen_gallery_page_tab_bar_ref" /> 
+            
+            <!-- Include Gallery View Layout here... -->
+            <include layout="@layout/screen_gallery_page_layout_view_ref" /> 
+            
+            <!-- Include Gallery Edit Layout here... -->
+            <include layout="@layout/screen_gallery_page_layout_shoot_ref" />
+
+            <!-- Include Gallery Sync Layout here... -->
+            <include layout="@layout/screen_gallery_page_layout_sync_ref" /> 
+
+            <!-- Include Gallery Location Layout here... -->
+            <include layout="@layout/screen_gallery_page_layout_location_ref" /> 
+
+            <FrameLayout
+                android:id="@+id/fullScreenLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="91" >
+
+                <com.memreas.util.ScaleImageView
+                    android:id="@+id/thumbView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo_img" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="100" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="7"
+                        android:onClick="closeView"
+                        android:weightSum="100" >
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="91" >
+                        </FrameLayout>
+
+                        <ImageButton
+                            android:id="@+id/closeView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:background="@drawable/btn_back_gallery"
+                            android:onClick="closeView"
+                            android:src="@null" />
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2" >
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                layout="@layout/admob" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.3" >
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/main_menu_bar" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        layout="@layout/loading" />
+
+</RelativeLayout>

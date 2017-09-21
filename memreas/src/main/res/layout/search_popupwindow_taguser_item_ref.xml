@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_img_small" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="75"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg_friend"
+            android:gravity="center|center_horizontal"
+            android:text="\@username"
+            android:padding="5dp" 
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/notification_message_text_size"
+            android:textStyle="bold" />
+        
+         <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/btn_add_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_btn_add_friend"
+            android:visibility="gone" />
+
+<!--         <FrameLayout -->
+<!--             android:id="@+id/fl_added" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:background="@android:color/white" -->
+<!--             android:padding="2dp" > -->
+<!--         </FrameLayout> -->
+            
+            <TextView
+                android:id="@+id/tv_added"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:text="@string/option_memreas_search_user_friend_added"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/notification_message_text_size"
+                android:textStyle="bold"
+                android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

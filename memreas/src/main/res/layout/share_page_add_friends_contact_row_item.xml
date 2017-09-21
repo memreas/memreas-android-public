@@ -1,0 +1,37 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/networkDetailsRow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="100" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:weightSum="20" >
+
+        <ImageButton
+            android:id="@+id/imgbtnCbEmailOrSMS"
+            android:layout_width="@dimen/friendlist_checkbox_width"
+            android:layout_height="@dimen/friendlist_checkbox_height"
+            android:background="@drawable/unselected"
+            android:tag="unselected" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtContactDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="80"
+        android:gravity="center_horizontal"
+        android:text="SMS: (555) 555-1212"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/friendlist_text_size"
+        android:textStyle="bold" />
+
+</TableRow>

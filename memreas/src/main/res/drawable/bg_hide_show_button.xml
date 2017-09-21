@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+            <solid android:color="#ffcc30" />
+            <corners android:radius="@dimen/btn_show_hide_radius"/>
+        </shape></item>
+    <item><shape>
+            <solid android:color="#aaaaaa" />
+            <corners android:radius="@dimen/btn_show_hide_radius"
+                android:topLeftRadius="@dimen/btn_show_hide_radius"
+                android:topRightRadius="@dimen/btn_show_hide_radius"
+                android:bottomLeftRadius="@dimen/btn_show_hide_radius"
+                android:bottomRightRadius="@dimen/btn_show_hide_radius"/>
+        </shape></item>
+
+</selector>

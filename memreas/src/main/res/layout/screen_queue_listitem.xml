@@ -1,0 +1,271 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_upload_height"
+        android:weightSum="100" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28" >
+
+            <ImageView
+                android:id="@+id/qbackview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" >
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="94"
+                    android:orientation="vertical"
+                    android:weightSum="100" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4" >
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/qimageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="92"
+                        android:background="@android:color/black"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gallery_img" />
+                    
+                    <ImageView
+                        android:id="@+id/qimageviewgone"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="92"
+                        android:background="@android:color/black"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gallery_img" 
+                        android:visibility="gone"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4" >
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" >
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="35" >
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="vertical"
+                    android:weightSum="100" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="31" >
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/qvideoImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="38"
+                        android:background="@drawable/play_video"
+                        android:visibility="invisible" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="31" >
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="35" >
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="53.5" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="53.5"
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" >
+                </FrameLayout>
+
+                <ProgressBar
+                    android:id="@+id/uploadProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="40"
+                    android:progressDrawable="@drawable/upload_progressbar"
+                    android:secondaryProgress="0"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/downloadProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="40"
+                    android:progressDrawable="@drawable/download_progressbar"
+                    android:secondaryProgress="0" 
+                    android:visibility="gone" />
+                
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" >
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" >
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/process"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="40"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/signup_edit_margin_left"
+                    android:singleLine="true"
+                    android:text="0%"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/signup_text_size"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" >
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="11.5"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="23" >
+
+            </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="55.5"
+                android:background="@drawable/cancel" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="21.5" >
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/spaceView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/upload_space_height" />
+
+</LinearLayout>

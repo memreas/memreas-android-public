@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_main"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/hdr_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/txt_memreas" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/txtHideInappropriateContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_bg_friend"
+                android:gravity="center|center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/memreas_event_details_inappropriate_hide_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/signup_text_size"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:padding="5dp"
+        android:paddingLeft="5dp" 
+        android:paddingRight="25dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:orientation="horizontal" 
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp" >
+
+            <FrameLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:padding="5dp" >
+
+                <ImageButton
+                    android:id="@+id/imgChkBoxOffensiveSexualContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/unselected"
+                    android:tag="unselected" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+	           	android:background="@android:color/white"
+                android:layout_gravity="start|center_vertical"
+                android:gravity="center"
+                android:padding="1dp" >
+
+                <TextView
+                    android:id="@+id/txtOffensiveSexualContent"
+	                android:background="@drawable/edit_space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/memreas_event_details_inappropriate_hide_sexual"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/friendlist_text_size"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:orientation="horizontal" 
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp" >
+
+            <FrameLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:padding="5dp" >
+
+                <ImageButton
+                    android:id="@+id/imgChkBoxOffensiveViolentContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/unselected"
+                    android:tag="unselected" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+	           	android:background="@android:color/white"
+                android:layout_gravity="start|center_vertical"
+                android:gravity="center"
+                android:padding="1dp" >
+
+                <TextView
+                    android:id="@+id/txtOffensiveViolentContent"
+	                android:background="@drawable/edit_space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/memreas_event_details_inappropriate_hide_violent"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/friendlist_text_size"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>       
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:orientation="horizontal" 
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp" >
+
+            <FrameLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:padding="5dp" >
+
+                <ImageButton
+                    android:id="@+id/imgChkBoxOffensiveHateContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/unselected"
+                    android:tag="unselected" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+	           	android:background="@android:color/white"
+                android:layout_gravity="start|center_vertical"
+                android:gravity="center"
+                android:padding="1dp" >
+
+                <TextView
+                    android:id="@+id/txtOffensiveHateContent"
+	                android:background="@drawable/edit_space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/memreas_event_details_inappropriate_hide_hate"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/friendlist_text_size"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>               
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:orientation="horizontal" 
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp" >
+
+            <FrameLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:padding="5dp" >
+
+                <ImageButton
+                    android:id="@+id/imgChkBoxOffensiveOtherContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/unselected"
+                    android:tag="unselected" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+	           	android:background="@android:color/white"
+                android:layout_gravity="start|center_vertical"
+                android:gravity="center"
+                android:padding="1dp" >
+
+                <TextView
+                    android:id="@+id/txtOffensiveOtherContent"
+	                android:background="@drawable/edit_space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/memreas_event_details_inappropriate_hide_other"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/friendlist_text_size"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>       
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="horizontal" 
+        android:padding="5dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_add"
+                android:text="@string/gallery_location_btn_ok"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/memreas_btn_text_size" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_add"
+                android:onClick="cancelButton"
+                android:text="@string/gallery_location_btn_cancel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/memreas_btn_text_size" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="85"
+    android:background="@drawable/hdr_bg"
+    android:weightSum="100" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" >
+    </FrameLayout>
+
+    <com.memreas.util.ScaledImageView
+        android:id="@+id/nav_btn_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/memreas_optionbtn_margin"
+        android:layout_weight="13"
+        android:background="@drawable/nav_search_icon"
+        android:onClick="navSearchBtn"
+        android:src="@null"
+        app:scaleHeight="68"
+        app:scaleWidth="92"
+        app:sizeScaleType="width"/>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="21" >
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/titleView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="28"
+        android:background="@null"
+        android:src="@drawable/txt_memreas" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="19" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="15" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:weightSum="15" >
+
+            <com.memreas.util.ScaledImageView
+                android:id="@+id/optionBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="13"
+                android:onClick="navNotificationBtn"
+                android:src="@drawable/option_icon"
+                app:scaleHeight="68"
+                app:scaleWidth="92"
+                app:sizeScaleType="width" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nav_tv_notification"
+            android:layout_width="@dimen/notification_number_size"
+            android:layout_height="@dimen/notification_number_size"
+            android:background="@drawable/notification_number_bg"
+            android:gravity="center"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="@dimen/notification_number_text_size"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" >
+    </FrameLayout>
+
+</LinearLayout>

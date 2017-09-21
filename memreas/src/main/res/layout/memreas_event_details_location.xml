@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/memreas_event_location_LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="100" >
+
+    <!-- profile and name section start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="100" >
+
+        <include
+            android:id="@+id/locationProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            layout="@layout/memreas_event_details_profile" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="75"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|fill_horizontal"
+                android:padding="2dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/txtLocationEventName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_vertical"
+                    android:background="@drawable/edittext_bg_friend"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="!Event Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/signup_text_size"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- event location section start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="horizontal" >
+
+        <fragment
+            android:id="@+id/event_location_map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!-- event location section end -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnPagerPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/btn_gallery_prev" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/event_details_media_location_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:numColumns="@integer/grid_num_cols" />
+
+        <ImageButton
+            android:id="@+id/btnPagerNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/btn_gallery_next" />
+    </LinearLayout>
+
+</LinearLayout>

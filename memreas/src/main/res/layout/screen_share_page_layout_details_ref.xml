@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMembersDetails"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="55.5"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="98"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_space_height" >
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/OnlyNameRequired"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_notifyview_height"
+                    android:background="@drawable/dark_bg"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:singleLine="true"
+                    android:text="@string/memreas_only_name_required"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/add_memreas_text_size" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_space_half_height" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_namelyt_height"
+                    android:weightSum="100" >
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="32"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/memreas_create_name"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/add_memreas_text_size" />
+
+                    <EditText
+                        android:id="@+id/editTextName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="68"
+                        android:background="@drawable/edittext_share_name"
+                        android:ems="4"
+                        android:hint="@string/memreas_create_name_hint"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                        android:singleLine="true"
+                        android:textSize="@dimen/signup_edit_text_size" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_space_height" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_datelyt_height"
+                    android:weightSum="100" >
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="32"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/memreas_create_date"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/add_memreas_text_size" />
+
+                    <TextView
+                        android:id="@+id/txtInputDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="58"
+                        android:background="@drawable/edittext_bg_addmem"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                        android:singleLine="true"
+                        android:textColor="?android:attr/editTextColor"
+                        android:textSize="@dimen/signup_edit_text_size" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@drawable/btn_date" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_space_height" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_locatinlyt_height"
+                    android:weightSum="100" >
+
+                    <TextView
+                        android:id="@+id/txtLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="32"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/memreas_create_location"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/add_memreas_text_size" />
+
+                    <EditText
+                        android:id="@+id/editTextLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="68"
+                        android:background="@drawable/edittext_share_name"
+                        android:editable="false"
+                        android:ems="4"
+                        android:focusable="false"
+                        android:hint="@string/memreas_create_location_hint"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                        android:singleLine="true"
+                        android:textSize="@dimen/signup_edit_text_size" >
+                    </EditText>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_space_height" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_checkpiclyt_height"
+                    android:weightSum="100" >
+
+                    <ImageButton
+                        android:id="@+id/cbFriendsCanPost"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@drawable/selected"
+                        android:tag="selected" />
+
+                    <TextView
+                        android:id="@+id/textCheckPic"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="93"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/add_memreas_check_text_margin_left"
+                        android:singleLine="true"
+                        android:text="@string/memreas_create_friends_can_post"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/add_memreas_text_size" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_space_height1" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_checkfriendlyt_height"
+                    android:weightSum="100" >
+
+                    <ImageButton
+                        android:id="@+id/cbFriendsCanAddFriends"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@drawable/selected"
+                        android:tag="selected" />
+
+                    <TextView
+                        android:id="@+id/textCheckAddFriend"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="93"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/add_memreas_check_text_margin_left"
+                        android:singleLine="true"
+                        android:text="@string/memreas_create_friends_can_add_friends"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/add_memreas_text_size" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_space_height1" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_checkpubliclyt_height"
+                    android:weightSum="100" >
+
+                    <ImageButton
+                        android:id="@+id/cbPublic"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@drawable/unselected"
+                        android:tag="unselected" />
+
+                    <TextView
+                        android:id="@+id/textCheckPublic"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="93"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/add_memreas_check_text_margin_left"
+                        android:singleLine="true"
+                        android:text="@string/memreas_create_public"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/add_memreas_text_size" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_space_height" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_viewablelyt_height"
+                    android:weightSum="100" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20.83" >
+                        </FrameLayout>
+
+                        <ImageButton
+                            android:id="@+id/cbViewable"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="58.34"
+                            android:background="@drawable/unselected"
+                            android:tag="unselected" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20.83" >
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtViewable"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="22"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/add_memreas_check_text_margin_left"
+                        android:singleLine="true"
+                        android:text="@string/memreas_create_viewable"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/add_memreas_text_size" />
+
+                    <TextView
+                        android:id="@+id/editTextViewableFrom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="24"
+                        android:background="@drawable/edittext_date_1"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/memreas_create_date_from_hint"
+                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                        android:singleLine="true"
+                        android:textColor="?android:attr/editTextColor"
+                        android:textSize="@dimen/signup_edit_text_size" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnViewableFrom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@drawable/btn_date" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" />
+
+                    <TextView
+                        android:id="@+id/editTextViewableTo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="23"
+                        android:background="@drawable/edittext_date_1"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/memreas_create_date_to_hint"
+                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                        android:singleLine="true"
+                        android:textColor="?android:attr/editTextColor"
+                        android:textSize="@dimen/signup_edit_text_size" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnViewableTo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@drawable/btn_date" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_space_height" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_destructlyt_height"
+                    android:weightSum="100" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20.83" >
+                        </FrameLayout>
+
+                        <ImageButton
+                            android:id="@+id/cbGhost"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="58.34"
+                            android:background="@drawable/unselected"
+                            android:tag="unselected" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20.83" >
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textGhost"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/add_memreas_check_text_margin_left"
+                        android:text="@string/memreas_create_ghost"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/add_memreas_text_size" />
+
+                    <TextView
+                        android:id="@+id/editTextGhost"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="34"
+                        android:background="@drawable/edittext_date_1"
+                        android:clickable="true"
+                        android:singleLine="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/signup_edit_margin_left"
+                        android:textColor="?android:attr/editTextColor"
+                        android:textSize="@dimen/signup_edit_text_size" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnGhostCal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@drawable/btn_date" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_memreas_space_height" >
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

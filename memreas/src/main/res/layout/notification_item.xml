@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:weightSum="100" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+    <ImageView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="13"
+        android:background="@drawable/rounded_corner"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_img"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="65"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_nofication_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/notification_message_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="65" >
+
+            <ImageView
+                android:id="@+id/ic_notification_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:scaleType="fitCenter"
+                android:src="@drawable/notification_event_icon"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/tv_nofication_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="17.4"
+                android:orientation="vertical"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/notification_time_text_size" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="38.6"
+                android:gravity="center_vertical"
+                android:weightSum="3" >
+
+                <ImageView
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/notification_btn_accept"/>
+
+                <ImageView
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/notification_btn_reply"/>
+
+                <ImageView
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/notification_btn_decline"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+    <ImageView
+        android:id="@+id/iv_media_thumb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="13"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gallery_img"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+
+</LinearLayout>

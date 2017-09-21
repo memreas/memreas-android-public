@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_comment_title_bg"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:weightSum="100" >
+
+            <ImageView
+                android:id="@+id/titleView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:src="@drawable/comment_text" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:onClick="onClose"
+            android:paddingTop="15dp"
+            android:src="@drawable/btn_close_comment" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="@drawable/add_comment_bg"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.memreas.util.ExpandableHeightListView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:divider="#00ffffff"
+                        android:dividerHeight="10dp"
+                        android:fadingEdge="none"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </ScrollView>
+
+            <ProgressBar
+                android:id="@+id/processBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:indeterminateDrawable="@drawable/loading_bar"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="#fff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:text="@string/memreas_create_comment_text"
+            android:textColor="#fff"
+            android:textSize="@dimen/signup_edit_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/comment_item_bg"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/addComment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="88.29"
+                android:background="#00ffffff"
+                android:ems="4"
+                android:hint="@string/memreas_custom_media_comment_hint"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/signup_edit_margin_left"
+                android:singleLine="true"
+                android:textSize="@dimen/signup_edit_text_size" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:id="@+id/addCommentAudio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="11.71"
+                android:onClick="addCommentAudioBtn"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_micro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:weightSum="100" >
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="39"
+                android:background="@drawable/btn_add"
+                android:onClick="okButton"
+                android:text="@string/gallery_location_btn_ok"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/memreas_btn_text_size" />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="39"
+                android:background="@drawable/btn_add"
+                android:onClick="cancelButton"
+                android:text="@string/gallery_location_btn_cancel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/memreas_btn_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

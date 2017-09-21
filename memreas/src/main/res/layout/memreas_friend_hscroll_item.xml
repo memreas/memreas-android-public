@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/friendItemLinearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/memreas_event_thumb"
+            android:layout_width="@dimen/media_gallery_thumb_width"
+            android:layout_height="@dimen/media_gallery_thumb_height"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gallery_img" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/memreas_event_name"
+            android:layout_width="@dimen/media_gallery_thumb_width"
+            android:layout_height="@dimen/add_memreas_checkpiclyt_height"
+            android:background="@color/event_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="ev1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/add_memreas_text_size"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

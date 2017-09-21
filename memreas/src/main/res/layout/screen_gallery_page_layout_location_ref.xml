@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/locationLyt"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="91"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:id="@+id/searchLyt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/search_text"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+		<EditText
+			android:id="@+id/searchLocationView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_button_height"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="4"
+            android:paddingLeft="@dimen/signup_edit_margin_left"
+            android:textSize="@dimen/signup_edit_text_size" 
+			android:dropDownHeight="@dimen/search_button_height" >
+		</EditText>
+
+        <ImageView
+            android:id="@+id/btnSearchLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:padding="5dp"
+            android:src="@drawable/img_search" >
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="52" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:id="@+id/layout_location_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/btnSetLocation"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_button_height"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="43.5"
+            android:background="@drawable/btn_add"
+            android:text="@string/memreas_galery_ok"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/memreas_btn_text_size" />
+
+        <Button
+            android:id="@+id/btnCancelLocation"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_button_height"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="43.5"
+            android:background="@drawable/btn_add"
+            android:text="@string/memreas_create_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/memreas_btn_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:id="@+id/ImagePagerLyt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:background="@drawable/dark_bg"
+        android:weightSum="100" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+        </FrameLayout>
+
+        <!-- Previous Button Start -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="23" >
+            </FrameLayout>
+
+            <View
+                android:id="@+id/btnPagerPrev"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:background="@drawable/btn_gallery_prev" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="17" >
+            </FrameLayout>
+        </LinearLayout>
+        <!-- Previous Button End -->
+        
+        <!-- Image View Start? -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/locationimagepager"
+            android:numColumns="@integer/grid_num_cols"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="79" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+        <!-- Image View End? -->
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="23" >
+            </FrameLayout>
+
+            <View
+                android:id="@+id/btnPagerNext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:background="@drawable/btn_gallery_next" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="17" >
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+</LinearLayout>

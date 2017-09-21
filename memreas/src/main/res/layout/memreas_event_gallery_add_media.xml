@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="500dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="85"
+                android:gravity="center"
+                android:background="@drawable/hdr_bg"
+                android:weightSum="100" >
+
+                <ImageView
+                    android:id="@+id/titleView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="96"
+                    android:background="@null"
+                    android:padding="10dp"
+                    android:src="@drawable/txt_select_gallery_photos" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70" >
+
+            <GridView
+                android:id="@+id/addMemreasMediaGridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fastScrollEnabled="true"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/media_gallery_horizontal_space"
+                android:numColumns="3"
+                android:smoothScrollbar="true"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/media_gallery_vertical_space" >
+            </GridView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:padding="5dp"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:padding="10dp" >
+
+                <Button
+                    android:id="@+id/okBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_add"
+                    android:onClick="okButton"
+                    android:text="@string/gallery_location_btn_ok"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:padding="10dp" >
+
+                <Button
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_add"
+                    android:onClick="cancelButton"
+                    android:text="@string/gallery_location_btn_cancel"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/memreas_btn_text_size" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>
